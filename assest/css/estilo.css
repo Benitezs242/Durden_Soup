@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'sandRegular';
+    src: url(../fonts/Quicksand-Regular.ttf);}
+
+@font-face {
+    font-family: 'sandBold';
+    src: url(../fonts/Quicksand-Bold.ttf);}
+
+@font-face {
+    font-family: 'sandSemibold';
+    src: url(../fonts/Quicksand-SemiBold.ttf);
+}
+
+body{font-family: 'sandRegular';}
+
+.lupita img{width: 20px;
+height: 20px;}
+.user img{width: 25px;
+height: 25px;}
+.cart img{width: 25px;
+height: 25px;}
+.heart img{width: 25px;
+height: 25px;}
+
+.sobreNo a{text-decoration: none;
+    color:black;
+    font-size: 13px;}
+
+.sobreNo{margin-left: 5px;}
+
+.pildoras{transform: translateX(-8px) !important;}
+
+.offButt img{width: 25px;
+    height: 25px;}
+
+.loguito img{width: 80px;
+    transform: translateX(-35px)}
+
+.cta img{width: 25px;
+    height: 25px;}
+.cta {border: none;
+    background: none;}
+.cta span {padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;}
+.cta svg {transform: translateX(-8px);
+    transition: all 0.3s ease;}
+.cta:hover svg {transform: translateX(0);}
+.cta:active svg {transform: scale(0.9);}
+.hover-underline-animation {position: relative;
+    color: black;
+    padding-bottom: 20px;}
+.hover-underline-animation:after {content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;}
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;}
+
+.reg img{width: 25px;
+    height: 25px;}
+.reg {border: none;
+    background: none;}
+.reg span {padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;}
+.reg svg {transform: translateX(-8px);
+    transition: all 0.3s ease;}
+.reg:hover svg {transform: translateX(0);}
+.reg:active svg {transform: scale(0.9);}
+.hover-underline-animation {position: relative;
+    color: black;
+    padding-bottom: 20px;}
+.hover-underline-animation:after {content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;}
+.reg:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;}
+
+.wish img{width: 25px;
+    height: 25px;}
+.wish {border: none;
+    background: none;}
+.wish span {padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;}
+.wish svg {transform: translateX(-8px);
+    transition: all 0.3s ease;}
+.wish:hover svg {transform: translateX(0);}
+.wish:active svg {transform: scale(0.9);}
+.hover-underline-animation {position: relative;
+    color: black;
+    padding-bottom: 20px;}
+.hover-underline-animation:after {content: "";
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+height: 2px;
+bottom: 0;
+left: 0;
+background-color: #000000;
+transform-origin: bottom right;
+transition: transform 0.25s ease-out;}
+.wish:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;}
+
+.cont img{width: 25px;
+    height: 25px;}
+.cont {border: none;
+    background: none;}
+.cont span {padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;}
+.cont svg {transform: translateX(-8px);
+    transition: all 0.3s ease;}
+.cont:hover svg {transform: translateX(0);}
+.cont:active svg {transform: scale(0.9);}
+.hover-underline-animation {position: relative;
+    color: black;
+    padding-bottom: 20px;}
+.hover-underline-animation:after {content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;}
+.cont:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;}
+
+.iconRedes img{width: 15px;
+    height: 15px}
+
+.iconRedes{transform: translateY(170px);}
