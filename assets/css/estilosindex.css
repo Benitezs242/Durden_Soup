@@ -1,24 +1,139 @@
+:root{
+    --fondotituloproductos: #ffab9d ;  
+}
+
 *{
     background-color: transparent;
 }
-.produc{
-    font-size: 20px;
-    background-image: url(../img/fondofloral.avif);
-    border-radius: 100px;
-    color: #fff;
+/* Css para el Titulo de productos*/
+.ov-botonn-grow-spin {
+    background: var(--fondotituloproductos); /* color de fondo */
+    /* border: 2px solid #4741d7; tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    color: #111; /* color de fuente */
+  }
+  .ov-botonn-grow-spin:hover {
+    color: #fff;/* color de fuente hover */
+  }
+  .ov-botonn-grow-spin::after {
+    content: "";
+    background-image: url(../img/Fondos/fondofloral.avif); /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0) rotate(-180deg);
+    transition: all 0.3s ease;
 }
-.produc:hover{
-    border: 1px solid;
-    border-color: blueviolet;
+.ov-botonn-grow-spin:hover::after {
+    transition: all 0.3s ease-out;
+    transform: scale(1, 1) rotate(0deg);
 }
-.publicidad{
+/* Estilo obtenido de https://ovdivi.com/10-botones-creativos-con-increibles-efectos-hover-para-tus-sitios-web-creados-con-divi/
+aplicado en Titulo de productos */
+
+
+
+
+/*Inicio de css para contenedor de grilla*/
+.fondotarjeta{
+    background-image: url(../img/Fondos/Marco.jpg);
+}
+.imgtarjeta{
     width: 240px;
     height: 240px;
 }
-.conten{
-    background-image: url(../img/Marco.jpg);
+/* Css Boton Saber mas/
+/* Css https://plantillashtmlgratis.com/categoria/efectos-css/botones-css-efecto-hover creado por Andreas Storm / */
+.texto{
+    text-decoration: none;
+    color: inherit;
+    font-size: 30px;
 }
-.grup{
-    grid-gap: 43px;
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 19px 22px;
+    transition: all 0.2s ease;
+  }
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgba(255, 171, 157, 0.5);
+    width: 56px;
+    height: 56px;
+    transition: all 0.3s ease;
+  }
+  .cta span {
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+  .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #111;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+  .cta:hover:before {
+    width: 100%;
+    background: #ffab9d;
+  }
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  .cta:active {
+    transform: scale(0.96);
+  }
+ /* Fin css para grillas principales*/
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
