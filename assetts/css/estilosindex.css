@@ -1,7 +1,24 @@
 *{
     background-color: transparent;
 }
-.imgjabones{
-    width: 20%;
-    
+.produc{
+    font-size: 20px;
+    background-image: url(../img/fondofloral.avif);
+    border-radius: 100px;
+    color: #fff;
+}
+.produc:hover{
+    border: 1px solid;
+    border-color: blueviolet;
+}
+.publicidad{
+    width: 240px;
+    height: 240px;
+}
+.conten{
+    background-image: url(../img/Marco.jpg);
+}
+.grup{
+    grid-gap: 43px;
+
 }
