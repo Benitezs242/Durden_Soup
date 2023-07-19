@@ -1,24 +1,41 @@
-*{
-    background-color: transparent;
-}
-
-.boton-slider{
-    position: absolute;
-}
-
-.huno{
-    position: relative;
-    top: -100px;
-    left: 50%;
-    color: rgb(255, 28, 236);
-}
-
-.acs{
-    border: 1px solid;  
+body{
+    font-family: 'Lumanosimo', cursive;
+    overflow-x: hidden;
 }
 
 .fondo{
     background-image: url(/Durden_Soup/assetts/img/IMAGENESsantiago/quienessomos.jpg);
-    padding: o;
-    margin: 0;
+    font-weight: 200;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    
+}
+
+.foto1{
+    background-image: url(https://via.placeholder.com/900x300);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px !important;
+    border: 1px solid;  
+    color: blueviolet;
+}
+
+.jab{
+    font-size: 20px;
+    border-color: black;
+    color: #a00085;
+}
+.aprende:hover{
+    font-weight: 900;
+    color: #a00085;
+}
+.slick-dots li button:before {
+    font-size: 16px !important;
+    color: #a00085 !important;
+   }
+
+.slick-dots li.slick-active button:before {
+    color: rgb(255, 0, 157) !important;
+    font-size: 15px;
 }
