@@ -18,9 +18,9 @@
 </head>
 
 <body>
-    <!-- fonfamily
+<!-- fonfamily
         @import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
-    -->
+-->
     <!-- nav bar con canvas y producto -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary pt-1 pb-1 fixed-top">
         <div class="container-fluid d-flex">
@@ -33,13 +33,13 @@
                 </li>
                 <div class="pildoras d-flex">
                     <li class="nav-item">
-                        <a class="nav-link p-2" href="#">Sobre Nosotros</a>
+                        <a class="nav-link p-2" href="#nosotros">Sobre Nosotros</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link p-2" href="#">Aprende con Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link p-2" href="#">Productos</a>
+                        <a class="nav-link p-2" href="#productosSeccion">Productos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link p-2">Durden Baby</a>
@@ -80,7 +80,7 @@
             </ul>
         </div>
     </nav>
-    <!-- fin nav bar  y comienzo de off canvas-->
+<!-- fin nav bar  y comienzo de off canvas-->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
             <h1 class="offcanvas-title" id="offcanvasExampleLabel">Durden Soap</h1>
@@ -148,8 +148,8 @@
             </div>
         </div>
     </div>
-    <!-- Fin de off canvas e inicio de carrucel-->
-    <section>
+<!-- Fin de off canvas e inicio de carrucel-->
+    <section id="nosotros" class="fix">
         <div class="col-12">
             <div class="miSlider">
                 <div class="foto1 d-flex justify-content-center align-items-end">
@@ -174,17 +174,16 @@
                 </div>
             </div>
         </div>
-
         <Section class=" fondo">
             <div class="col-12">
                 <div class="container align-content">
                     <section class="d-flex justify-content-between">
-                        <div>
-                            DURDEN SOAP
+                        <div class="marca">
+                            <strong>DURDEN SOAP</strong>
                         </div>
                         <div class="d-flex justify-content">
                             <a class="text-decoration-none" href="Ver todas los jabones">
-                                <p class="fs-3 aprende"> Aprende con nosotros <svg
+                                <p class="fs-3 aprende letras"> Aprende con nosotros <svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                         fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd"
@@ -197,22 +196,19 @@
                 </div>
             </div>
             <div class="row">
-
-                <div class="col-4 offset-2 jab">JABONES QUE HARAN VOLAR TU CASA</div>
-
+                <div class="col-4 offset-2 jab ">JABONES QUE HARAN VOLAR TU CASA</div>
                 <div class="col-6">
-
                 </div>
                 <div class="col-3 offset-2">
-
                 </div>
             </div>
         </Section>
     </section>
 <!-- Grilla de productos -->
+<section id="productosSeccion">
     <section class="container-fluid">
         <div class="d-flex justify-content-center hov">
-            <div class="ov-botonn-grow-spin d-flex justify-content-center w-50 shadow-sm p-2 fix rounded">
+            <div class="ov-botonn-grow-spin d-flex justify-content-center w-50 shadow-sm p-2 rounded">
                 <a href="#" class="texto"><strong>Productos</strong></a>
             </div>
         </div>
@@ -290,29 +286,36 @@
                                 </svg>
                             </a>
                         </div>
-
                     </div>
                 </div>
             </div>
         </section>
+    </section>
+</section>
         <!-- Fin grilla de productos -->
-        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-            crossorigin="anonymous"integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-                <script>
-            $(document).ready(function () {
-                $('.miSlider').slick({
-                    dots: true,
-                    infinite: true,
-                    speed: 500,
-                    fade: true,
-                    cssEase: 'linear'
-                });
+<!-- cdn javascript-->
+<div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+            <script>
+        $(document).ready(function () {
+            $('.miSlider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear'
             });
-        </script>   
+        });
+    </script>
+<!-- fin cdns javascript -->
+
+</div>
+        
         </body>
 </html>

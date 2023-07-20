@@ -1,11 +1,350 @@
 :root {
   --fondotituloproductos: #ffab9d;
+  --tipoletrapeque:'sandregular';
+}
+@font-face {
+  font-family: 'sandRegular';
+  src: url(../fonts/Quicksand-Regular.ttf);
 }
 
+@font-face {
+  font-family: 'sandBold';
+  src: url(../fonts/Quicksand-Bold.ttf);
+}
+@font-face {
+  font-family: 'sandSemibold';
+  src: url(../fonts/Quicksand-SemiBold.ttf);
+}
 * {
   background-color: transparent;
 }
+body {
+  font-family: var(--tipoletra1);
+  overflow-x: hidden;
+  /* font-family: 'Lumanosimo', cursive; */
+}
+/* css para navbar */
+.lupita img {
+  width: 20px;
+  height: 20px;
+}
 
+.user img {
+  width: 25px;
+  height: 25px;
+}
+
+.cart img {
+  width: 25px;
+  height: 25px;
+}
+
+.heart img {
+  width: 25px;
+  height: 25px;
+}
+
+.sobreNo a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+}
+
+.sobreNo {
+  margin-left: 5px;
+}
+
+.pildoras {
+  transform: translateX(-8px) !important;
+}
+
+.offButt img {
+  width: 25px;
+  height: 25px;
+}
+
+.loguito img {
+  width: 80px;
+  transform: translateX(-35px)
+}
+
+.cta img {
+  width: 25px;
+  height: 25px;
+}
+
+.cta {
+  border: none;
+  background: none;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.reg img {
+  width: 25px;
+  height: 25px;
+}
+
+.reg {
+  border: none;
+  background: none;
+}
+
+.reg span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.reg svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.reg:hover svg {
+  transform: translateX(0);
+}
+
+.reg:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.reg:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.wish img {
+  width: 25px;
+  height: 25px;
+}
+
+.wish {
+  border: none;
+  background: none;
+}
+
+.wish span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.wish svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.wish:hover svg {
+  transform: translateX(0);
+}
+
+.wish:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.wish:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.cont img {
+  width: 25px;
+  height: 25px;
+}
+
+.cont {
+  border: none;
+  background: none;
+}
+
+.cont span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cont svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cont:hover svg {
+  transform: translateX(0);
+}
+
+.cont:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cont:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.iconRedes img {
+  width: 15px;
+  height: 15px
+}
+
+.iconRedes {
+  transform: translateY(170px);
+}
+
+
+
+
+
+/* Fin Navbar */
+/*Inicio css para carrucel y quienes somos */
+.fondo {
+  background-image: url(../img/Fondos/fondofloral.avif);
+  opacity: 70%;
+  font-weight: 200;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.foto1 {
+  background-image: url(https://via.placeholder.com/900x300);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px !important;
+  border: 1px solid;
+  color: blueviolet;
+}
+
+.jab {
+  font-size: 22px;
+  border-color: black;
+  color: #a00085;
+}
+
+.aprende:hover {
+  font-weight: 900;
+  color: #a00085;
+}
+.marca{
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+.slick-dots li button:before {
+  font-size: 16px !important;
+  color: #a00085 !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: rgb(255, 0, 157) !important;
+  font-size: 15px;
+}
+/* fin css carrucel*/
 /* Css para el Titulo de productos*/
 .ov-botonn-grow-spin {
   background: var(--fondotituloproductos);
@@ -19,15 +358,14 @@
   overflow: hidden;
   display: inline-block;
   color: #111;
-  margin-top: 100px;
+  margin-top: 30px;
   /* color de fuente */
+  font-family: var(--tipoletra1);
 }
-
 .ov-botonn-grow-spin:hover {
   color: #fff;
   /* color de fuente hover */
 }
-
 .ov-botonn-grow-spin::after {
   content: "";
   background-image: url(../img/Fondos/fondofloral.avif);
@@ -48,12 +386,8 @@
   transition: all 0.3s ease-out;
   transform: scale(1, 1) rotate(0deg);
 }
-
 /* Estilo obtenido de https://ovdivi.com/10-botones-creativos-con-increibles-efectos-hover-para-tus-sitios-web-creados-con-divi/
 aplicado en Titulo de productos */
-
-
-
 
 /*Inicio de css para contenedor de grilla*/
 .fondotarjeta {
@@ -62,10 +396,8 @@ aplicado en Titulo de productos */
 }
 
 .imgtarjeta {
-  width: 240px;
   height: 240px;
 }
-
 /* Css Boton Saber mas/
 /* Css https://plantillashtmlgratis.com/categoria/efectos-css/botones-css-efecto-hover creado por Andreas Storm / */
 .texto {
