@@ -1,19 +1,33 @@
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/estilosindex.css">
     <link rel="stylesheet" href="assets/css/estilo.css">
+    <link rel="stylesheet" href="assets/css/carrusel.css">
     <title>Durden Soup</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-<!-- nav bar con canvas y producto -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary pt-1 pb-1 fixed-top">
+    <!-- fonfamily
+        @import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+    -->
+    <!-- nav bar con canvas y producto -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary pt-1 pb-1 fixed-top">
         <div class="container-fluid d-flex">
             <ul class="nav nav-pills d-flex sobreNo">
                 <li>
-                    <button class="btn btn-outline-secondary  rounded-circle border-0 offButt" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
+                    <button class="btn btn-outline-secondary  rounded-circle border-0 offButt" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
                         <img src="assets/Log/burger_icon.png" alt="">
                     </button>
                 </li>
@@ -40,8 +54,10 @@
             <ul class="nav nav-pills d-flex">
                 <li class="nav-item">
                     <form class="d-flex input-group-sm mx-2" role="search">
-                        <input class="form-control mt-1 rounded-0 rounded-start border" type="text" placeholder="Busca en Durden">
-                        <button class="btn btn-outline-secondary rounded-0 rounded-end mt-1 border lupita" type="submit">
+                        <input class="form-control mt-1 rounded-0 rounded-start border" type="text"
+                            placeholder="Busca en Durden">
+                        <button class="btn btn-outline-secondary rounded-0 rounded-end mt-1 border lupita"
+                            type="submit">
                             <img src="assets/Log/lupa.png" alt="">
                         </button>
                     </form>
@@ -63,148 +79,240 @@
                 </li>
             </ul>
         </div>
-</nav>
-<!-- fin nav bar  y comienzo de off canvas-->
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-header">
-        <h1 class="offcanvas-title" id="offcanvasExampleLabel">Durden Soap</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
+    </nav>
+    <!-- fin nav bar  y comienzo de off canvas-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title" id="offcanvasExampleLabel">Durden Soap</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
         <div class="offcanvas-body d-flex flex-column justify-content-start">
             <div>
                 <button class="cta">
                     <img src="assets/Log/user.png" alt="">&nbsp
-                        <span class="hover-underline-animation"> Mi Perfil </span>
-                            <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
-                                <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
-                            </svg>
+                    <span class="hover-underline-animation"> Mi Perfil </span>
+                    <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
+                        id="arrow-horizontal">
+                        <path transform="translate(30)"
+                            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10"
+                            id="Path_10"></path>
+                    </svg>
                 </button>
                 <button class="reg">
                     <img src="assets/Log/account_member.png" alt="">&nbsp
                     <span class="hover-underline-animation"> Registrate </span>
-                        <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
-                        <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
-                        </svg>
+                    <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
+                        id="arrow-horizontal">
+                        <path transform="translate(30)"
+                            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10"
+                            id="Path_10"></path>
+                    </svg>
                 </button>
                 <button class="wish">
                     <img src="assets/Log/order_list.png" alt="">&nbsp
-                        <span class="hover-underline-animation"> ¡Lo quiero! </span>
-                        <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
-                        <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
-                        </svg>
+                    <span class="hover-underline-animation"> ¡Lo quiero! </span>
+                    <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
+                        id="arrow-horizontal">
+                        <path transform="translate(30)"
+                            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10"
+                            id="Path_10"></path>
+                    </svg>
                 </button>
                 <button class="cont">
                     <img src="assets/Log/customer-service.png" alt="">&nbsp
-                        <span class="hover-underline-animation"> Contactanos </span>
-                        <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
-                        <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
-                        </svg>
+                    <span class="hover-underline-animation"> Contactanos </span>
+                    <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
+                        id="arrow-horizontal">
+                        <path transform="translate(30)"
+                            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10"
+                            id="Path_10"></path>
+                    </svg>
                 </button>
             </div>
             <div class="iconRedes d-flex flex-column align-items-start">
-                <button class="facebook bg-white border-0" type="button"> 
+                <button class="facebook bg-white border-0" type="button">
                     <img src="assets/Log/facebook.png" alt=""> <small>Facebook</small>
                 </button>
-                <button class="whatsapp bg-white border-0" type="button"> 
+                <button class="whatsapp bg-white border-0" type="button">
                     <img src="assets/Log/whatsapp.png" alt=""> <small>WhatsApp</small>
                 </button>
-                <button class="instagram bg-white border-0" type="button"> 
+                <button class="instagram bg-white border-0" type="button">
                     <img src="assets/Log/instagram.png" alt=""> <small>Instagram</small>
                 </button>
-                <button class="tiktok bg-white border-0" type="button"> 
+                <button class="tiktok bg-white border-0" type="button">
                     <img src="assets/Log/tik-tok.png" alt=""> <small>TikTok</small>
                 </button>
-                <button class="email bg-white border-0" type="button"> 
+                <button class="email bg-white border-0" type="button">
                     <img src="assets/Log/email.png" alt=""> <small>general@durdensoap.com</small>
                 </button>
             </div>
         </div>
-</div>
-<!-- Fin de off canvas e Inicio Grilla de productos -->
+    </div>
+    <!-- Fin de off canvas e inicio de carrucel-->
+    <section>
+        <div class="col-12">
+            <div class="miSlider">
+                <div class="foto1 d-flex justify-content-center align-items-end">
+                    <h1 class="boton-slider">
+                        IMAGEN 1.
+                    </h1>
+                </div>
+                <div class="foto1 d-flex justify-content-center align-items-end">
+                    <h1 class="boton-slider">
+                        IMAGEN 2.
+                    </h1>
+                </div>
+                <div class="foto1 d-flex justify-content-center align-items-end">
+                    <h1 class="boton-slider">
+                        IMAGEN 3.
+                    </h1>
+                </div>
+                <div class="foto1 d-flex justify-content-center align-items-end">
+                    <h1 class="boton-slider">
+                        IMAGEN 4.
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <Section class=" fondo">
+            <div class="col-12">
+                <div class="container align-content">
+                    <section class="d-flex justify-content-between">
+                        <div>
+                            DURDEN SOAP
+                        </div>
+                        <div class="d-flex justify-content">
+                            <a class="text-decoration-none" href="Ver todas los jabones">
+                                <p class="fs-3 aprende"> Aprende con nosotros <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg>
+                                </p>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-4 offset-2 jab">JABONES QUE HARAN VOLAR TU CASA</div>
+
+                <div class="col-6">
+
+                </div>
+                <div class="col-3 offset-2">
+
+                </div>
+            </div>
+        </Section>
+    </section>
 <!-- Grilla de productos -->
-<section class="container-fluid">
+    <section class="container-fluid">
         <div class="d-flex justify-content-center hov">
             <div class="ov-botonn-grow-spin d-flex justify-content-center w-50 shadow-sm p-2 fix rounded">
                 <a href="#" class="texto"><strong>Productos</strong></a>
             </div>
-        </div>        
-    <section class="row grup p-4">
-                <div class="col-3">
-                    <div class="card fondotarjeta">
-                        <img src="assets/img/Productos/Jabon1.jpg" class="card-img-top imgtarjeta rounded-2" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title d-flex align-content-center justify-content-center fs-4">Jabon Chiquito</h5>
+        </div>
+        <section class="row grup p-4">
+            <div class="col-3">
+                <div class="card fondotarjeta">
+                    <img src="assets/img/Productos/Jabon1.jpg" class="card-img-top imgtarjeta rounded-2" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex align-content-center justify-content-center fs-4">Jabon Chiquito
+                        </h5>
                         <div class="card-text">&nbsp;</div>
                         <div>
                             <a href="#" class="cta texto">
                                 <span>Saber Más</span>
-                                    <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                        <path d="M1,5 L11,5"></path>
-                                        <polyline points="8 1 12 5 8 9"></polyline>
-                                    </svg>
-                            </a>    
+                                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                    <path d="M1,5 L11,5"></path>
+                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                            </a>
                         </div>
-                        </div>
-                    </div>
                     </div>
                 </div>
-                <div class="col-3">                    
-                    <div class="card fondotarjeta" style="width: 18rem;">
-                        <img src="assets/img/Productos/Jabon1.jpg" class="card-img-top imgtarjeta rounded-2" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title d-flex align-content-center justify-content-center fs-4">Jabon Chiquito</h5>
+            </div>
+            </div>
+            <div class="col-3">
+                <div class="card fondotarjeta" style="width: 18rem;">
+                    <img src="assets/img/Productos/Jabon1.jpg" class="card-img-top imgtarjeta rounded-2" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex align-content-center justify-content-center fs-4">Jabon Chiquito
+                        </h5>
                         <div>
                             <div class="card-text">&nbsp;</div>
                             <a href="#" class="cta texto">
                                 <span>Saber Más</span>
-                                    <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                        <path d="M1,5 L11,5"></path>
-                                        <polyline points="8 1 12 5 8 9"></polyline>
-                                    </svg>
-                            </a>    
-                        </div>
+                                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                    <path d="M1,5 L11,5"></path>
+                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                            </a>
                         </div>
                     </div>
-                    </div> 
-                    <div class="col-3">
-                        <div class="card fondotarjeta" style="width: 18rem;">
-                            <img src="assets/img/Productos/Jabon1.jpg" class="card-img-top imgtarjeta rounded-2" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title d-flex align-content-center justify-content-center fs-4">Jabon Chiquito</h5>
-                            <div>
-                                <div class="card-text">&nbsp;</div>
-                                <a href="#" class="cta texto">
-                                    <span>Saber Más</span>
-                                        <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                            <path d="M1,5 L11,5"></path>
-                                            <polyline points="8 1 12 5 8 9"></polyline>
-                                        </svg>
-                                </a>    
-                            </div>
-                            </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card fondotarjeta" style="width: 18rem;">
+                    <img src="assets/img/Productos/Jabon1.jpg" class="card-img-top imgtarjeta rounded-2" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex align-content-center justify-content-center fs-4">Jabon Chiquito
+                        </h5>
+                        <div>
+                            <div class="card-text">&nbsp;</div>
+                            <a href="#" class="cta texto">
+                                <span>Saber Más</span>
+                                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                    <path d="M1,5 L11,5"></path>
+                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                            </a>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card fondotarjeta" style="width: 18rem">
+                    <img src="assets/img/Productos/Jabon1.jpg" class="card-img-top imgtarjeta rounded-2" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex align-content-center fs-4">Jabon Chiquito</h5>
+                        <div class="card-text">&nbsp;</div>
+                        <div>
+                            <a href="#" class="cta texto">
+                                <span>Saber Más</span>
+                                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                                    <path d="M1,5 L11,5"></path>
+                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                            </a>
                         </div>
-                        <div class="col-3">
-                            <div class="card fondotarjeta" style="width: 18rem">
-                                <img src="assets/img/Productos/Jabon1.jpg" class="card-img-top imgtarjeta rounded-2" alt="...">
-                                <div class="card-body">
-                                <h5 class="card-title d-flex align-content-center fs-4">Jabon Chiquito</h5>
-                                <div class="card-text">&nbsp;</div>
-                                <div>
-                                    <a href="#" class="cta texto">
-                                        <span>Saber Más</span>
-                                            <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                                <path d="M1,5 L11,5"></path>
-                                                <polyline points="8 1 12 5 8 9"></polyline>
-                                            </svg>
-                                    </a>    
-                                </div>
-                                
-                                </div>
-                            </div>
-                            </div>
-    </section>
-<!-- Fin grilla de productos -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-</body>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin grilla de productos -->
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+                <script>
+            $(document).ready(function () {
+                $('.miSlider').slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 500,
+                    fade: true,
+                    cssEase: 'linear'
+                });
+            });
+        </script>   
+        </body>
 </html>
