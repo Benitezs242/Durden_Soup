@@ -358,7 +358,8 @@ body {
   overflow: hidden;
   display: inline-block;
   color: #111;
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 5px;
   /* color de fuente */
   font-family: var(--tipoletra1);
 }
