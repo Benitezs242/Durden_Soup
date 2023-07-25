@@ -289,18 +289,9 @@ body {
 }
 
 .iconRedes img {
-  width: 15px;
-  height: 15px
+  width: 20px;
+  height: 20px
 }
-
-.iconRedes {
-  transform: translateY(170px);
-}
-
-
-
-
-
 /* Fin Navbar */
 /*Inicio css para carrucel y quienes somos */
 .fondo {
@@ -464,3 +455,16 @@ aplicado en Titulo de productos */
 }
 
 /* Fin css para grillas principales*/
+/* inicio footer */
+.caja{
+  background-color:transparent;
+  width: 100%;
+  height: 200px;  
+}
+.decoracion a{
+  text-decoration: none;
+  color: #111;
+}
+.imgtarjetas{
+  height: 80px;
+}
