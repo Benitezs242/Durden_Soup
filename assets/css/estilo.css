@@ -1,118 +1,120 @@
 @font-face {
     font-family: 'sandRegular';
-    src: url(../fonts/Quicksand-Regular.ttf);}
+    src: url(../fonts/Quicksand-Regular.ttf);
+}
 
 @font-face {
     font-family: 'sandBold';
-    src: url(../fonts/Quicksand-Bold.ttf);}
+    src: url(../fonts/Quicksand-Bold.ttf);
+}
 
 @font-face {
     font-family: 'sandSemibold';
     src: url(../fonts/Quicksand-SemiBold.ttf);
 }
 
-body{font-family: 'sandRegular';}
+body {
+    font-family: 'sandRegular';
+}
 
-.lupita img{width: 20px;
-    height: 20px;}
-    .user img{width: 25px;
-    height: 25px;}
-    .cart img{width: 25px;
-    height: 25px;}
-    .heart img{width: 25px;
-    height: 25px;}
-    
-    .sobreNo a{text-decoration: none;
-        color:black;
-        font-size: 13px;}
-    
-    .sobreNo{margin-left: 5px;}
-    
-    .pildoras{transform: translateX(-8px) !important;}
-    
-    .offButt img{width: 25px;
-        height: 25px;}
-    
-    .loguito img{width: 80px;
-        transform: translateX(-35px)}
-    
-    .cta img{width: 25px;
-        height: 25px;}
-    .cta {border: none;
-        background: none;}
-    .cta span {padding-bottom: 7px;
-        letter-spacing: 4px;
-        font-size: 14px;
-        padding-right: 15px;
-        text-transform: uppercase;}
-    .cta svg {transform: translateX(-8px);
-        transition: all 0.3s ease;}
-    .cta:hover svg {transform: translateX(0);}
-    .cta:active svg {transform: scale(0.9);}
-    .hover-underline-animation {position: relative;
-        color: black;
-        padding-bottom: 20px;}
-    .hover-underline-animation:after {content: "";
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #000000;
-        transform-origin: bottom right;
-        transition: transform 0.25s ease-out;}
-    .cta:hover .hover-underline-animation:after {
-        transform: scaleX(1);
-        transform-origin: bottom left;}
-    
-    .reg img{width: 25px;
-        height: 25px;}
-    .reg {border: none;
-        background: none;}
-    .reg span {padding-bottom: 7px;
-        letter-spacing: 4px;
-        font-size: 14px;
-        padding-right: 15px;
-        text-transform: uppercase;}
-    .reg svg {transform: translateX(-8px);
-        transition: all 0.3s ease;}
-    .reg:hover svg {transform: translateX(0);}
-    .reg:active svg {transform: scale(0.9);}
-    .hover-underline-animation {position: relative;
-        color: black;
-        padding-bottom: 20px;}
-    .hover-underline-animation:after {content: "";
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #000000;
-        transform-origin: bottom right;
-        transition: transform 0.25s ease-out;}
-    .reg:hover .hover-underline-animation:after {
-        transform: scaleX(1);
-        transform-origin: bottom left;}
-    
-    .wish img{width: 25px;
-        height: 25px;}
-    .wish {border: none;
-        background: none;}
-    .wish span {padding-bottom: 7px;
-        letter-spacing: 4px;
-        font-size: 14px;
-        padding-right: 15px;
-        text-transform: uppercase;}
-    .wish svg {transform: translateX(-8px);
-        transition: all 0.3s ease;}
-    .wish:hover svg {transform: translateX(0);}
-    .wish:active svg {transform: scale(0.9);}
-    .hover-underline-animation {position: relative;
-        color: black;
-        padding-bottom: 20px;}
-    .hover-underline-animation:after {content: "";
+.lupita img {
+    width: 20px;
+    height: 20px;
+}
+
+.user img {
+    width: 20px;
+    height: 20px;
+}
+
+.cart img {
+    width: 20px;
+    height: 20px;
+}
+
+.shopp{margin-top: 0px;}
+
+.heart img {
+    width: 20px;
+    height: 20px;
+}
+
+.iniciarS{font-size: 14px;}
+
+.fav{font-size: 14px;}
+
+.shopp{font-size: 14px;}
+
+.sobreNo a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px !important;
+    font-family: 'sandSemiBold' !important;
+}
+
+.sobreNo {
+    margin-left: 5px;
+}
+
+.offButt img {
+    width: 25px;
+    height: 25px;
+}
+
+.offButt:hover {
+    transition-duration: 1s;
+}
+
+.cerrarOff img {
+    width: 25px;
+    height: 25px;
+}
+
+.loguito img {
+    width: 80px;
+    transform: translate(90px, -10px);
+}
+
+
+.cta img {
+    width: 25px;
+    height: 25px;
+}
+
+.cta {
+    border: none;
+    background: none;
+}
+
+.cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+
+.cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active svg {
+    transform: scale(0.9);
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
     position: absolute;
     width: 100%;
     transform: scaleX(0);
@@ -121,42 +123,322 @@ body{font-family: 'sandRegular';}
     left: 0;
     background-color: #000000;
     transform-origin: bottom right;
-    transition: transform 0.25s ease-out;}
-    .wish:hover .hover-underline-animation:after {
-        transform: scaleX(1);
-        transform-origin: bottom left;}
-    
-    .cont img{width: 25px;
-        height: 25px;}
-    .cont {border: none;
-        background: none;}
-    .cont span {padding-bottom: 7px;
-        letter-spacing: 4px;
-        font-size: 14px;
-        padding-right: 15px;
-        text-transform: uppercase;}
-    .cont svg {transform: translateX(-8px);
-        transition: all 0.3s ease;}
-    .cont:hover svg {transform: translateX(0);}
-    .cont:active svg {transform: scale(0.9);}
-    .hover-underline-animation {position: relative;
-        color: black;
-        padding-bottom: 20px;}
-    .hover-underline-animation:after {content: "";
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #000000;
-        transform-origin: bottom right;
-        transition: transform 0.25s ease-out;}
-    .cont:hover .hover-underline-animation:after {
-        transform: scaleX(1);
-        transform-origin: bottom left;}
-    
-    .iconRedes img{width: 15px;
-        height: 15px}
-    
-    .iconRedes{transform: translateY(170px);}
+    transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.reg img {
+    width: 25px;
+    height: 25px;
+}
+
+.reg {
+    border: none;
+    background: none;
+}
+
+.reg span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+
+.reg svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+}
+
+.reg:hover svg {
+    transform: translateX(0);
+}
+
+.reg:active svg {
+    transform: scale(0.9);
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.reg:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.wish img {
+    width: 25px;
+    height: 25px;
+}
+
+.wish {
+    border: none;
+    background: none;
+}
+
+.wish span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+
+.wish svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+}
+
+.wish:hover svg {
+    transform: translateX(0);
+}
+
+.wish:active svg {
+    transform: scale(0.9);
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.wish:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.cont img {
+    width: 25px;
+    height: 25px;
+}
+
+.cont {
+    border: none;
+    background: none;
+}
+
+.cont span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+
+.cont svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+}
+
+.cont:hover svg {
+    transform: translateX(0);
+}
+
+.cont:active svg {
+    transform: scale(0.9);
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.cont:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.telefono img {
+    width: 40px;
+    height: 40px;
+}
+
+.ubicacion img {
+    width: 40px;
+    height: 40px;
+    transform: translateX(10px);
+}
+
+.txt {
+    margin-top: 10px !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: black !important;
+    font-size: 12px !important;
+    margin-top: 5px;
+}
+
+.contacto {
+    transform: translateY(180px);
+}
+
+.lugar {
+    transform: translateY(180px);
+}
+
+.formularioC{margin-top: 100px;}
+
+/*button,
+button::after {
+    padding: 10px 15px;
+    font-size: 18px;
+    background: linear-gradient(45deg, transparent 5%, #f8a0b5 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 1;
+    box-shadow: 6px 0px 0px #00e6f6;
+    outline: transparent;
+    position: relative;
+}
+
+button::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    content: "HOVER ME";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #f8a0b5 5%);
+    text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+    clip-path: var(--slice-0);
+}
+
+button:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+    0% {
+        clip-path: var(--slice-1);
+        transform: translate(-20px, -10px);
+    }
+
+    10% {
+        clip-path: var(--slice-3);
+        transform: translate(10px, 10px);
+    }
+
+    20% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 10px);
+    }
+
+    30% {
+        clip-path: var(--slice-3);
+        transform: translate(0px, 5px);
+    }
+
+    40% {
+        clip-path: var(--slice-2);
+        transform: translate(-5px, 0px);
+    }
+
+    50% {
+        clip-path: var(--slice-3);
+        transform: translate(5px, 0px);
+    }
+
+    60% {
+        clip-path: var(--slice-4);
+        transform: translate(5px, 10px);
+    }
+
+    70% {
+        clip-path: var(--slice-2);
+        transform: translate(-10px, 10px);
+    }
+
+    80% {
+        clip-path: var(--slice-5);
+        transform: translate(20px, -10px);
+    }
+
+    90% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 0px);
+    }
+
+    100% {
+        clip-path: var(--slice-1);
+        transform: translate(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*el rosa poner como variable #f1c6b8
