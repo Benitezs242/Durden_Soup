@@ -13,14 +13,17 @@
     src: url(../fonts/Quicksand-SemiBold.ttf);
 }
 
+
+
 body {
     font-family: 'sandRegular';
 }
 
-.lupita img {
-    width: 20px;
-    height: 20px;
+.contenedorPrincipal {
+    height: 80vh;
 }
+
+/* Nav : Barra busqueda e iconos */
 
 .user img {
     width: 20px;
@@ -32,28 +35,32 @@ body {
     height: 20px;
 }
 
-.shopp{margin-top: 0px;}
+.shopp {
+    margin-top: 0px;
+}
 
 .heart img {
     width: 20px;
     height: 20px;
 }
 
-.iniciarS{font-size: 14px;}
+.iniciarS {
+    font-size: 13px;
+}
 
-.fav{font-size: 14px;}
+.fav {
+    font-size: 13px;
+}
 
-.shopp{font-size: 14px;}
+.shopp {
+    font-size: 13px;
+}
 
 .sobreNo a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255) !important;
     font-size: 14px !important;
     font-family: 'sandSemiBold' !important;
-}
-
-.sobreNo {
-    margin-left: 5px;
 }
 
 .offButt img {
@@ -70,11 +77,33 @@ body {
     height: 25px;
 }
 
-.loguito img {
-    width: 80px;
-    transform: translate(90px, -10px);
+/* css buttons offcanvas */
+
+.input {
+    width: 150px;
+    padding: 10px 0px 10px 40px;
+    border-radius: 9999px;
+    border: solid 1px #ffffff;
+    transition: all .2s ease-in-out;
+    outline: none;
+    opacity: 0.8;
 }
 
+.container-input svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+}
+
+.input:focus {
+    opacity: 1;
+    width: 250px;
+}
+
+.container-input {
+    position: relative;
+}
 
 .cta img {
     width: 25px;
@@ -296,11 +325,15 @@ body {
     transform-origin: bottom left;
 }
 
+/* Par no ver las flechas en el telefono */
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
+/* formulario de contacto */
 
 .telefono img {
     width: 40px;
@@ -332,7 +365,60 @@ a {
     transform: translateY(180px);
 }
 
-.formularioC{margin-top: 100px;}
+.formularioC {
+    margin-top: 100px;
+}
+
+/* input formulario */
+
+.inputF {
+    border-radius: 10px;
+    outline: 2px solid #fcedf8;
+    border: 0;
+    font-family: 'sandRegular';
+    font-size: 13px;
+    background-color: #fcedf865;
+    outline-offset: 3px;
+    padding: 10px 1rem;
+    transition: 0.25s;
+}
+
+.inputF:focus {
+    outline-offset: 5px;
+    background-color: #fff
+}
+
+.inputF::-webkit-input-placeholder {
+    text-align: center;
+}
+
+/* css del send button */
+
+.buttonSend {
+    background-color: #fcedf865;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'sandRegular';
+    letter-spacing: .25px;
+    line-height: normal;
+    padding: 11px 24px;
+    transition: background box-shadow 280ms ease;
+}
+
+
+
+.buttonSend :active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+    border: 2px solid #4285f4;
+}
+
+
 
 /*button,
 button::after {
