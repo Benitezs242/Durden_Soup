@@ -13,14 +13,14 @@
     src: url(../fonts/Quicksand-SemiBold.ttf);
 }
 
-
+@media screen {(min-width: 768px) (max-width: 1200px)}
 
 body {
     font-family: 'sandRegular';
 }
 
 .contenedorPrincipal {
-    height: 80vh;
+    height: 90vh;
 }
 
 /* Nav : Barra busqueda e iconos */
@@ -335,15 +335,16 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* formulario de contacto */
 
-.telefono img {
-    width: 40px;
-    height: 40px;
+.logoTel img {
+    width: 25px;
+    height: 25px;
 }
 
-.ubicacion img {
-    width: 40px;
-    height: 40px;
-    transform: translateX(10px);
+.logoUbi img {
+    width: 25px;
+    height: 25px;
+    margin-left: 0%;
+    padding-left: 0%;
 }
 
 .txt {
@@ -352,7 +353,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 a {
     text-decoration: none !important;
-    color: black !important;
+    color: rgb(255, 255, 255) !important;
     font-size: 12px !important;
     margin-top: 5px;
 }
@@ -417,8 +418,7 @@ a {
     outline: none;
     border: 2px solid #4285f4;
 }
-
-
+}
 
 /*button,
 button::after {

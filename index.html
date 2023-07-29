@@ -72,10 +72,10 @@
         </div>
     </nav>
 
-    <section class="contenedorPrincipal d-flex justify-content-center align-items-center">
-        <div class="container-lg text-center w-100 textoContacto">
+    <section class="d-flex justify-content-center align-items-center">
+        <div class="container-fluid text-center w-100 textoContacto">
             <div class="row">
-                <div class="col-lg">
+                <div class="col">
                     <div class="conText">
                         <h1>Ponte en contacto con Nosotros</h1>
                     </div>
@@ -87,44 +87,29 @@
                             </small>
                         </p>
                     </div>
-                    <div class="container-lg text-center contacto">
-                        <div class="row row-cols-3">
-                            <div class="col-2 justify-content-lg-center align-items-xl-end telefono">
-                                <img src="assets/Log/phone.png">
-                            </div>
-                            <div class="col-4 d-grid justify-content-lg-start">
-                                <a href="tel:+573208678464">+57 320 867 8464</a>
-                                <a href="tel:+573227509256">+57 322 750 9256</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row-cols-3 lugar">
-                        <div class="col-2 justify-content-lg-center ubicacion">
-                            <img src="assets/Log/location pin.png">
-                        </div>
-                        <div class="col-4 justify-content-lg-start txt">
-                            <a href="#">Cra. 13 # 54-55, Bogota, D.C</a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
-        <div class="container-lg text-center flex-column contenedorFormulario">
+        <div class="container-fluid text-center flex-column contenedorFormulario">
             <div class="row">
-                <div class="col-lg">
+                <div class="col mt-5 mb-0">
                     <form id="formContacto">
                         <div class="usuario">
-                            <input class="inputF" placeholder="Usuario" type="text" id="nombreUsuario" required="required" style="width: 500px">
+                            <input class="inputF" placeholder="Usuario" type="text" id="nombreUsuario"
+                                required="required" style="width: 500px">
                         </div>
                         <div class="correo mt-3">
-                            <input class="inputF" placeholder="Correo" type="email" id="correoUsuario" required="required" style="width: 500px">
+                            <input class="inputF" placeholder="Correo" type="email" id="correoUsuario"
+                                required="required" style="width: 500px">
                         </div>
                         <div class="telefono mt-3">
-                            <input class="inputF" placeholder="Teléfono" type="number" id="numeroTelefono" required="required" value="tel" style="width: 500px">
+                            <input class="inputF" placeholder="Teléfono" type="number" id="numeroTelefono"
+                                required="required" value="tel" style="width: 500px">
                         </div>
                         <div class="msnCont mt-4">
-                            <input class="inputF" placeholder="Nos pondremos en contacto tan pronto como veamos tu mensaje 🤞" id="comentarios"
-                                style="width: 550px; height: 200px">
+                            <input class="inputF"
+                                placeholder="Nos pondremos en contacto tan pronto como veamos tu mensaje 🤞"
+                                id="comentarios" style="width: 550px; height: 200px">
                             </textarea>
                         </div>
                         <input class="buttonSend mt-5" type="submit" placeholder="Enviar">
@@ -134,7 +119,27 @@
             </div>
         </div>
     </section>
-
+    <section class="footer contacto bg-dark p-1">
+        <div class="container text-center">
+            <div class="row row-cols-auto justify-content-center">
+                <div class="col logoTel"> 
+                    <img src="assets/Log/phone.png">
+                </div>
+                <div class="col">
+                    <a href="tel:+573208678464">+57 320 867 8464</a>
+                </div>
+                <div class="col">
+                    <a href="tel:+573227509256">+57 322 750 9256</a>
+                </div>
+                <div class="col logoUbi">
+                    <img src="assets/Log/location pin.png">
+                </div>
+                <div class="col">
+                    <a href="#">Cra. 13 # 54-55, Bogota, D.C</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
