@@ -13,106 +13,77 @@
 
 <body>
 
-    <div class="container-xl text-center w-100">
-        <div class="row">
-            <div class="col-xl">
-                <div class="conText">
-                    <h1>Ponte en contacto con Nosotros</h1>
-                </div>
-                <div class="letraP">
-                    <h3>¡Llena el formulario si quieres explotar tus habilidades!</h3>
-                    <p>
+    <section class="d-flex justify-content-center align-items-center">
+        <div class="container-fluid text-center w-100 textoContacto">
+            <div class="row">
+                <div class="col">
+                    <div class="conText">
+                        Ponte en contacto con Nosotros
+                    </div>
+                    <div class="letraP mt-5">
+                        ¡Llena el formulario si quieres explotar tus habilidades! 
+                    </div>
+                    <div class="aviso mt-5">
                         <small>
                             No aceptamos peticiones, quejas ni reclamos. No lo intentes, no las vamos a leer.
                         </small>
-                    </p>
-                </div>
-                <div class="container-xl text-center contacto">
-                    <div class="row row-cols-3">
-                        <div class="col-2 justify-content-xl-center align-items-xl-end telefono">
-                            <img src="assets/Log/phone.png">
-                        </div>
-                        <div class="col-4 d-grid justify-content-xl-start">
-                            <a href="tel:+573208678464">+57 320 867 8464</a>
-                            <a href="tel:+573227509256">+57 322 750 9256</a>
-                        </div>
                     </div>
                 </div>
-                <div class="row row-cols-3 lugar">
-                    <div class="col-2 justify-content-xl-center ubicacion">
+            </div>
+        </div>
+        <div class="container-fluid text-center flex-column contenedorFormulario">
+            <div class="row">
+                <div class="col mt-5 mb-0">
+                    <form class="justify-content-center align-content-center" id="formContacto">
+                        <div class="usuario">
+                            <input class="inputF" placeholder="Usuario" type="text" id="nombreUsuario"
+                                required="required" style="width: 500px">
+                        </div>
+                        <div class="correo mt-3">
+                            <input class="inputF" placeholder="Correo" type="email" id="correoUsuario"
+                                required="required" style="width: 500px">
+                        </div>
+                        <div class="telefono mt-3">
+                            <input class="inputF" placeholder="Teléfono" type="number" id="numeroTelefono"
+                                required="required" value="tel" style="width: 500px">
+                        </div>
+                        <div class="msnCont mt-4">
+                            <input class="inputF"
+                                placeholder="Nos pondremos en contacto tan pronto como veamos tu mensaje 🤞"
+                                id="comentarios" style="width: 550px; height: 200px">
+                            </textarea>
+                        </div>
+                        <input class="buttonSend mt-5" type="submit" placeholder="Enviar">
+                        </input>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footContacto fixed-bottom">
+        <footer class="container-fluid d-flex align-items-center" style= "height:2.5em ; background-color: #1B1A1D";>
+            <div class="container w-100 text-center">
+                <div class="row row-cols-auto justify-content-center">
+                    <div class="col logoTel"> 
+                        <img src="assets/Log/phone.png">
+                    </div>
+                    <div class="col">
+                        <a href="tel:+573208678464">+57 320 867 8464</a>
+                    </div>
+                    <div class="col">
+                        <a href="tel:+573227509256">+57 322 750 9256</a>
+                    </div>
+                    <div class="col logoUbi">
                         <img src="assets/Log/location pin.png">
                     </div>
-                    <div class="col-4 justify-content-xl-start txt">
+                    <div class="col">
                         <a href="#">Cra. 13 # 54-55, Bogota, D.C</a>
                     </div>
                 </div>
             </div>
-            <form class="row col-xl justify-content-center align-items-center">
-                <div class="col-xl-6">
-                    <label for="validationServer01" class="form-label">Nombre</label>
-                    <input type="text" class="form-control is-valid" id="validationServer01" value="Tyler" required>
-                    <div class="valid-feedback">
-                        ¡Interesate! <i class="em em-eyes" aria-role="presentation" aria-label="EYES"></i>
-                    </div>
-                </div>
-                <div class="col-xl-6">
-                    <label for="validationServer02" class="form-label">Apellido</label>
-                    <input type="text" class="form-control is-valid" id="validationServer02" value="Durden" required>
-                    <div class="valid-feedback">
-                        ¡Interesate! <i class="em em-eyes" aria-role="presentation" aria-label="EYES"></i>
-                    </div>
-                </div>
-                <div class="col-xl-12">
-                    <label for="validationServerUsername" class="form-label">Email</label>
-                    <div class="input-group has-validation">
-                        <span class="input-group-text" id="inputGroupPrepend3">@</span>
-                        <input type="text" class="form-control is-invalid" id="validationServerUsername"
-                            aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-                        <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                            Por favor ingresa tu correo... O no.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6">
-                    <label for="validationServer03" class="form-label">Ciudad</label>
-                    <input type="text" class="form-control is-invalid" id="validationServer03"
-                        aria-describedby="validationServer03Feedback" required>
-                    <div id="validationServer03Feedback" class="invalid-feedback">
-                        ¿Desde dónde nos contactas?
-                    </div>
-                </div>
-                <div class="col-xl-6 h-25">
-                    <label for="validationServer05" class="form-label">Telefono</label>
-                    <input type="number" class="form-control is-invalid nocelular" id="validationServer05"
-                        aria-describedby="validationServer05Feedback" required>
-                    <div id="validationServer05Feedback" class="invalid-feedback">
-                        Preferiblemente un número fijo, no tenemos para la recarga celular.
-                    </div>
-                </div>
-                <div class="col-xl-12">
-                    <textarea class="form-control"
-                        placeholder="Nos pondremos en contacto tan pronto como veamos tu mensaje 🤞"
-                        rows="3"></textarea>
-                </div>
-                <div class="col-xl-12">
-                    <div class="form-check">
-                        <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3"
-                            aria-describedby="invalidCheck3Feedback" required>
-                        <label class="form-check-label" for="invalidCheck3">
-                            ¿Estas de acuerdo con nuestros términos y condiciones?
-                        </label>
-                        <div id="invalidCheck3Feedback" class="invalid-feedback">
-                            Tienes que estar de acuerdo si quieres unirte al club, digo, recibir información <i
-                                class="em em-eyes" aria-role="presentation" aria-label="EYES"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="envBtn d-flex justify-content-end">
-                    <button type="submit">Enviar</button>
-                </div>
-            </form>
-        </div>
-    </div>
+        </footer>
+    </section>
 
 
 
