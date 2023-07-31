@@ -1,95 +1,165 @@
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/estilosindex.css">
+    <title>Document</title>
     <link rel="stylesheet" href="assets/css/estilo.css">
-    <link rel="stylesheet" href="assets/css/carrusel.css">
-    <title>Durden Soup</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <!-- fonfamily
-        @import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
--->
-    <!-- nav bar con canvas y producto -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary pt-1 pb-1 fixed-top">
+    <nav class="navbar d-flex justify-content-around" style="background-color: #1B1A1D; padding: 0%;">
+        <!-- Navbar content -->
         <div class="container-fluid d-flex">
             <ul class="nav nav-pills d-flex sobreNo">
-                <li>
-                    <button class="btn btn-outline-secondary  rounded-circle border-0 offButt" type="button"
-                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
-                        <img src="assets/Log/burger_icon.png" alt="">
+                <li class="offButt">
+                    <button class="rounded-5 border-0" style="background-color: #1B1A1D" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample">
+                        <img src="assets/img/iconos/burger_icon.png" alt="">
                     </button>
                 </li>
-                <div class="pildoras d-flex">
-                    <li class="nav-item">
-                        <a class="nav-link p-2" href="">Sobre Nosotros</a>
+                <div class="pildoras d-flex align-items-center">
+                    <li>
+                        <a class="nav-link p-0 m-0 mx-2" href="#">Sobre Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link p-2" href="#nosotros">Aprende con Nosotros</a>
+                        <a class="nav-link p-0 m-0 mx-2" href="#">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link p-2" href="#productosSeccion">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link p-2" href="#DourdenBaby">Durden Baby</a>
+                        <a class="nav-link p-0 m-0 mx-2" href="#">Guías</a>
                     </li>
                 </div>
             </ul>
             <div class="nav-item">
-                <a class="navbar-brand d-flex justify-content-center loguito" href="#">
-                    <img src="assets/Log/loguito.png">
-                </a>
+                <div class="navbar loguito" href="#">
+                    <img src="assets/img/iconos/Logo-01.png">
+                </div>
             </div>
-            <ul class="nav nav-pills d-flex">
-                <li class="nav-item">
-                    <form class="d-flex input-group-sm mx-2" role="search">
-                        <input class="form-control mt-1 rounded-0 rounded-start border" type="text"
-                            placeholder="Busca en Durden">
-                        <button class="btn btn-outline-secondary rounded-0 rounded-end mt-1 border lupita"
-                            type="submit">
-                            <img src="assets/Log/lupa.png" alt="">
-                        </button>
-                    </form>
+            <ul class="nav nav-pills d-flex ">
+                <li class="nav-item align-items-center">
+                    <div class="container-input mx-2">
+                        <input type="text" placeholder="Buscar" name="text" class="input" >
+                        <svg fill="#FFFFFF" width="20px" height="20px" viewBox="0 0 1920 1920"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z"
+                                fill-rule="evenodd"></path>
+                        </svg>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <button class="btn btn-outline-secondary  rounded-circle border-0 user" type="submit">
-                        <img src="assets/Log/user.png" alt="">
+                <li class="nav-item login">
+                    <button class="text-white rounded-5 border-0 user" style="background-color: #1B1A1D" type="submit">
+                        <img src="assets/img/iconos/user.png" alt=""> <br>
+                        <div class="iniciarS">Iniciar Sesión</div>
                     </button>
                 </li>
-                <li class="nav-item">
-                    <button class="btn btn-outline-secondary  rounded-circle border-0 user" type="submit">
-                        <img src="assets/Log/heart.png" alt="">
+                <li class="nav-item favorite">
+                    <button class="text-white rounded-5 border-0 heart" style="background-color: #1B1A1D" type="submit">
+                        <img src="assets/img/iconos/heart.png" alt=""> <br>
+                        <div class="fav">Favoritos</div>
                     </button>
                 </li>
-                <li class="nav-item">
-                    <button class="btn btn-outline-secondary rounded-circle border-0 user" type="submit">
-                        <img src="assets/Log/cart.png" alt="">
+                <li class="nav-item cart">
+                    <button class="text-white rounded-5 border-0 cart" style="background-color: #1B1A1D" type="submit">
+                        <img src="assets/img/iconos/cart.png" alt=""> <br>
+                        <div class="shopp">Carrito</div>
                     </button>
                 </li>
             </ul>
         </div>
     </nav>
-    <!-- fin nav bar  y comienzo de off canvas-->
+
+    <section class="d-flex justify-content-center align-items-center">
+        <div class="container-fluid text-center w-100 textoContacto">
+            <div class="row">
+                <div class="col">
+                    <div class="conText">
+                        Ponte en contacto con Nosotros
+                    </div>
+                    <div class="letraP mt-5">
+                        ¡Llena el formulario si quieres explotar tus habilidades! 
+                    </div>
+                    <div class="aviso mt-5">
+                        <small>
+                            No aceptamos peticiones, quejas ni reclamos. No lo intentes, no las vamos a leer.
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center flex-column contenedorFormulario">
+            <div class="row">
+                <div class="col mt-5 mb-0">
+                    <form class="justify-content-center align-content-center" id="formContacto">
+                        <div class="usuario">
+                            <input class="inputF" placeholder="Usuario" type="text" id="nombreUsuario"
+                                required="required" style="width: 500px">
+                        </div>
+                        <div class="correo mt-3">
+                            <input class="inputF" placeholder="Correo" type="email" id="correoUsuario"
+                                required="required" style="width: 500px">
+                        </div>
+                        <div class="telefono mt-3">
+                            <input class="inputF" placeholder="Teléfono" type="number" id="numeroTelefono"
+                                required="required" value="tel" style="width: 500px">
+                        </div>
+                        <div class="msnCont mt-4">
+                            <input class="inputF"
+                                placeholder="Nos pondremos en contacto tan pronto como veamos tu mensaje 🤞"
+                                id="comentarios" style="width: 550px; height: 200px">
+                            </textarea>
+                        </div>
+                        <input class="buttonSend mt-5" type="submit" placeholder="Enviar">
+                        </input>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footContacto fixed-bottom">
+        <footer class="container-fluid d-flex align-items-center" style= "height:2.5em ; background-color: #1B1A1D";>
+            <div class="container w-100 text-center">
+                <div class="row row-cols-auto justify-content-center">
+                    <div class="col logoTel"> 
+                        <img src="assets/img/iconos/phone.png">
+                    </div>
+                    <div class="col">
+                        <a href="tel:+573208678464">+57 320 867 8464</a>
+                    </div>
+                    <div class="col">
+                        <a href="tel:+573227509256">+57 322 750 9256</a>
+                    </div>
+                    <div class="col logoUbi">
+                        <img src="assets/img/iconos/location pin.png">
+                    </div>
+                    <div class="col">
+                        <a href="#">Cra. 13 # 54-55, Bogota, D.C</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    
+
+
+
+
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
-            <h1 class="offcanvas-title" id="offcanvasExampleLabel">Durden Soap</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h1 class="offcanvas-title mb-5 mt-4" id="offcanvasExampleLabel">Durden Soap</h1>
+            <button type="button" class="close-button cerrarOff bg-transparent border-0" data-bs-dismiss="offcanvas">
+                <img src="assets/Log/close-button.png" alt="">
+            </button>
         </div>
         <div class="offcanvas-body d-flex flex-column justify-content-start">
             <div>
-                <button class="cta">
-                    <img src="assets/Log/user.png" alt="">&nbsp
+                <button class="cta mb-4">
+                    <img src="assets/Log/user (1).png" alt="">&nbsp
                     <span class="hover-underline-animation"> Mi Perfil </span>
                     <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
                         id="arrow-horizontal">
@@ -98,7 +168,7 @@
                             id="Path_10"></path>
                     </svg>
                 </button>
-                <button class="reg">
+                <button class="reg mb-4">
                     <img src="assets/Log/account_member.png" alt="">&nbsp
                     <span class="hover-underline-animation"> Registrate </span>
                     <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +178,7 @@
                             id="Path_10"></path>
                     </svg>
                 </button>
-                <button class="wish">
+                <button class="wish mb-4">
                     <img src="assets/Log/order_list.png" alt="">&nbsp
                     <span class="hover-underline-animation"> ¡Lo quiero! </span>
                     <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
@@ -118,234 +188,25 @@
                             id="Path_10"></path>
                     </svg>
                 </button>
-                <button class="cont">
-                    <img src="assets/Log/customer-service.png" alt="">&nbsp
-                    <span class="hover-underline-animation"> Contactanos </span>
-                    <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
-                        id="arrow-horizontal">
-                        <path transform="translate(30)"
-                            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10"
-                            id="Path_10"></path>
-                    </svg>
-                </button>
+                <a href="contacto.html">
+                    <button class="cont mb-4">
+                        <img src="assets/Log/customer-service.png" alt="">&nbsp
+                        <span class="hover-underline-animation"> Contactanos </span>
+                        <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
+                            id="arrow-horizontal">
+                            <path transform="translate(30)"
+                                d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                                data-name="Path 10" id="Path_10"></path>
+                        </svg>
+                    </button>
+                </a>
             </div>
         </div>
-    </div>
-    <!-- Fin de off canvas e inicio de carrucel-->
-    <section id="nosotros" class="fix">
-        <div class="col-12">
-            <div class="miSlider">
-                <div class="foto1 d-flex justify-content-center align-items-end">
-                    <h1 class="boton-slider">
-                        IMAGEN 1.
-                    </h1>
-                </div>
-                <div class="foto1 d-flex justify-content-center align-items-end">
-                    <h1 class="boton-slider">
-                        IMAGEN 2.
-                    </h1>
-                </div>
-                <div class="foto1 d-flex justify-content-center align-items-end">
-                    <h1 class="boton-slider">
-                        IMAGEN 3.
-                    </h1>
-                </div>
-                <div class="foto1 d-flex justify-content-center align-items-end">
-                    <h1 class="boton-slider">
-                        IMAGEN 4.
-                    </h1>
-                </div>
-            </div>
-        </div>
-        <Section class=" fondo">
-            <div class="col-12">
-                <div class="container align-content">
-                    <section class="d-flex justify-content-between">
-                        <div class="marca">
-                            <strong>DURDEN SOAP</strong>
-                        </div>
-                        <div class="d-flex justify-content">
-                            <a class="text-decoration-none" href="Ver todas los jabones">
-                                <p class="fs-3 aprende letras"> Aprende con nosotros <svg
-                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                                    </svg>
-                                </p>
-                            </a>
-                        </div>
-                    </section>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-4 offset-2 jab ">JABONES QUE HARAN VOLAR TU CASA</div>
-                <div class="col-6">
-                </div>
-                <div class="col-3 offset-2">
-                </div>
-            </div>
-        </Section>
-    </section>
-    <!-- Grilla de productos -->
-    <section id="productosSeccion" class="container-fluid">
-        <div>
-            <div class="d-flex justify-content-center shadow-sm p-1 rounded">
-                <a href="#" class="texto"><strong>Dourden Productos</strong></a>
-            </div>
-        </div>
-        <section class="row grup p-4">
-            <div class="col-3">
-                <div class="card fondotarjeta">
-                    <img src="assets/img/Productos/Jabon1.jpg" class="card-img-top imgtarjeta rounded-2" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title d-flex align-content-center justify-content-center fs-4">Jabon Chiquito
-                        </h5>
-                        <div class="card-text">&nbsp;</div>
-                        <div>
-                            <a href="#" class="cta texto">
-                                <span>Saber Más</span>
-                                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                    <path d="M1,5 L11,5"></path>
-                                    <polyline points="8 1 12 5 8 9"></polyline>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="col-3">
-                <div class="card fondotarjeta" style="width: 18rem;">
-                    <img src="assets/img/Productos/Jabon1.jpg" class="card-img-top imgtarjeta rounded-2" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title d-flex align-content-center justify-content-center fs-4">Jabon Chiquito
-                        </h5>
-                        <div>
-                            <div class="card-text">&nbsp;</div>
-                            <a href="#" class="cta texto">
-                                <span>Saber Más</span>
-                                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                    <path d="M1,5 L11,5"></path>
-                                    <polyline points="8 1 12 5 8 9"></polyline>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card fondotarjeta" style="width: 18rem;">
-                    <img src="assets/img/Productos/Jabon1.jpg" class="card-img-top imgtarjeta rounded-2" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title d-flex align-content-center justify-content-center fs-4">Jabon Chiquito
-                        </h5>
-                        <div>
-                            <div class="card-text">&nbsp;</div>
-                            <a href="#" class="cta texto">
-                                <span>Saber Más</span>
-                                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                    <path d="M1,5 L11,5"></path>
-                                    <polyline points="8 1 12 5 8 9"></polyline>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card fondotarjeta" style="width: 18rem">
-                    <img src="assets/img/Productos/Jabon1.jpg" class="card-img-top imgtarjeta rounded-2" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title d-flex align-content-center fs-4">Jabon Chiquito</h5>
-                        <div class="card-text">&nbsp;</div>
-                        <div>
-                            <a href="#" class="cta texto">
-                                <span>Saber Más</span>
-                                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                    <path d="M1,5 L11,5"></path>
-                                    <polyline points="8 1 12 5 8 9"></polyline>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
-    <!-- Fin grilla de productos -->
-    <Footer class="caja shadow-lg rounded decoracion">
-        <div class="row">
-                <div class="col-6">
-                    <div class="iconRedes d-flex justify-content-around">
-                        <div class="m-5">
-                            <a href="#"><img src="assets/Log/facebook.png" alt=""> <small> Facebook</small></a>
-                        </div>
-                        <div class="m-5" type="button">
-                            <a href="#"><img src="assets/Log/whatsapp.png" alt=""><small> WhatsApp</small></a>
-                        </div>
-                        <div class="m-5" type="button">
-                            <a href="#"><img src="assets/Log/instagram.png" alt=""><small> Instagram</small></a>
-                        </div>
-                    </div>
-                    <div class="iconRedes d-flex justify-content-around">
-                        <div class="m-3" type="button">
-                            <a href="#"><img src="assets/Log/tik-tok.png" alt=""><small> TikTok</small></a>
-                        </div>
-                        <div class="m-3" type="button">
-                            <a href="#"><img src="assets/Log/email.png" alt=""><small>
-                                    general@durdensoap.com</small></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="texto">
-                        <strong>Dourden Soap</strong>
-                    </div>
-                    <div>
-                        Bogota, Colombia
-                    </div>
-                    <div>
-                        Comunicate con nosotros.
-                    </div>
-                    <div>
-                        Cra 13 # 54 - 55, Localidad Chapinero, Bogota Cundinamarca.
-                    </div>
-                    <div class="d-flex imgtarjetas">
-                        <img class="m-2" src="assets/img/Tarjetas/maestro.png" alt="">
-                        <img class="m-2" src="assets/img/Tarjetas/visa.png" alt="">
-                        <img class="m-2"src="assets/img/Tarjetas/mastercard.png" alt="">
-                        <img class="m-2"src="assets/img/Tarjetas/Paypal.png" alt="">
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </Footer>
-    <!-- cdn javascript -->
-    <div>
-        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-            integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"
-            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-        <script>
-            $(document).ready(function () {
-                $('.miSlider').slick({
-                    dots: true,
-                    infinite: true,
-                    speed: 500,
-                    fade: true,
-                    cssEase: 'linear'
-                });
-            });
-        </script>
-        <!-- fin cdns javascript -->
-
-
-    </div>
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

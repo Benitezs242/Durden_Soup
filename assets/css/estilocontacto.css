@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'sandRegular';
+    src: url(../fonts/Quicksand-Regular.ttf);
+}
+
+@layer base {
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+@font-face {
+    font-family: 'tituloBold';
+    src: url(../fonts/TituloBold.otf);
+}
+
+@font-face {
+    font-family: 'tituloItalica';
+    src: url(../fonts/TituloItalica.otf);
+}
+
+/* Texto */
+
+.conText {
+    font-family: 'tituloBold';
+    font-size: 50px;
+    line-height: 40px;
+}
+
+.letraP {
+    font-family: 'tituloItalica';
+    font-size: 30px;
+    line-height: 40px
+}
+
+/* formulario de contacto */
+
+.logoTel img {
+    width: 25px;
+    height: 25px;
+}
+
+.logoUbi img {
+    width: 25px;
+    height: 25px;
+}
+
+a {
+    text-decoration: none !important;
+    color: rgb(255, 255, 255) !important;
+    font-size: 13px !important;
+}
+
+.contenedorFormulario {
+    margin-top: 5rem;
+}
+
+/* input formulario */
+
+.inputF {
+    border-radius: 10px;
+    outline: 1.5px solid #AB8BCB;
+    border: 0;
+    font-family: 'sandRegular';
+    font-size: 13px;
+    background-color: #ab8bcb21;
+    outline-offset: 3px;
+    padding: 10px 1rem;
+    transition: 0.25s;
+}
+
+.inputF:focus {
+    outline-offset: 5px;
+    background-color: #ffffff
+}
+
+.inputF::-webkit-input-placeholder {
+    text-align: center;
+}
+
+/* css del send button */
+
+.buttonSend {
+    background-color: #ab8bcb21;
+    border-radius: 24px;
+    outline: #AB8BCB solid 1px;
+    border-style: none;
+    box-shadow: rgba(222, 180, 247, 0.2) 0 4px 6px -2px, rgba(236, 186, 248, 0.14) 0 7px 11px 0, rgba(159, 120, 182, 0.12) 0 2px 19px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'sandRegular';
+    letter-spacing: .25px;
+    line-height: normal;
+    padding: 11px 24px;
+    transition: background box-shadow 280ms ease;
+}
+
+
+
+.buttonSend :active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+    border: 2px solid #AB8BCB;
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    margin: 10rem;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    min-width: 350px;
+    background-color: #292929;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: .5rem;
+    position: absolute;
+    z-index: 1;
+    bottom: 250%;
+    left: 50%;
+    margin-left: -60px;
+    font-family: sans-serif;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #292929 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
