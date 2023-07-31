@@ -92,27 +92,27 @@
         </div>
         <div class="container-fluid text-center flex-column contenedorFormulario">
             <div class="row">
-                <div class="col mt-5 mb-0">
-                    <form class="justify-content-center align-content-center" id="formContacto">
-                        <div class="usuario">
-                            <input class="inputF" placeholder="Usuario" type="text" id="nombreUsuario"
-                                required="required" style="width: 500px">
+                <div class="col">
+                    <form class="justify-content-center flex-column align-content-center" id="formContacto">
+                        <div class="container">
+                            <input class="inputF" type="text" style="width: 500px;" id="iUsuario" required="required">
+                                <label>Usuario</label>
                         </div>
-                        <div class="correo mt-3">
-                            <input class="inputF" placeholder="Correo" type="email" id="correoUsuario"
-                                required="required" style="width: 500px">
+                        <div class="container mt-3">
+                            <input class="inputF" type="email" style="width: 500px;" id="iCorreo" required="required">
+                                <label>Correo</label>
                         </div>
-                        <div class="telefono mt-3">
-                            <input class="inputF" placeholder="Teléfono" type="number" id="numeroTelefono"
-                                required="required" value="tel" style="width: 500px">
+                        <div class="container mt-3">
+                            <input class="inputF" min="7" max="10" style="width: 500px;" type="number" id="iTelefono" required="required" value="tel">
+                            <label>Teléfono</label>
                         </div>
                         <div class="msnCont mt-4">
                             <input class="inputF"
-                                placeholder="Nos pondremos en contacto tan pronto como veamos tu mensaje 🤞"
-                                id="comentarios" style="width: 550px; height: 200px">
+                                placeholder="Nos pondremos en contacto tan pronto como veamos tu mensaje 🤞" id="iTexto"
+                                style="width: 550px; height: 200px">
                             </textarea>
                         </div>
-                        <input class="buttonSend mt-5" type="submit" placeholder="Enviar">
+                        <input class="buttonSend mt-5" type="submit" placeholder="Enviar" id="iSubmit">
                         </input>
                     </form>
                 </div>
@@ -121,10 +121,10 @@
     </section>
 
     <section class="footContacto fixed-bottom">
-        <footer class="container-fluid d-flex align-items-center" style= "height:2.5em ; background-color: #1B1A1D";>
+        <footer class="container-fluid d-flex align-items-center" style="height:2.5em ; background-color: #1B1A1D" ;>
             <div class="container w-100 text-center">
                 <div class="row row-cols-auto justify-content-center">
-                    <div class="col logoTel"> 
+                    <div class="col logoTel">
                         <img src="assets/Log/phone.png">
                     </div>
                     <div class="col">
@@ -143,9 +143,6 @@
             </div>
         </footer>
     </section>
-
-    
-
 
 
 

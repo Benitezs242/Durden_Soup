@@ -35,17 +35,21 @@
         <div class="container-fluid text-center flex-column contenedorFormulario">
             <div class="row">
                 <div class="col mt-5 mb-0">
-                    <form class="justify-content-center align-content-center" id="formContacto">
-                        <div class="usuario">
-                            <input class="inputF" placeholder="Usuario" type="text" id="iUsuario" required="required"
-                                style="width: 500px">
+                    <form class="justify-content-center flex-column align-content-center" id="formContacto">
+                        <div class="container">
+                            <input class="inputF" type="text" style="width: 500px;" id="iUsuario" required="required">
+                                <label>Usuario</label>
+                                <i></i>
                         </div>
-                        <div class="correo mt-3">
-                            <input class="inputF" placeholder="Correo" type="email" id="iCorreo" required="required"
-                                style="width: 500px">
+                        <div class="container mt-3">
+                            <input class="inputF" type="email" style="width: 500px;" id="iCorreo" required="required">
+                                <label>Correo</label>
+                                <i></i>
                         </div>
-                        <div class="telefono mt-3 tooltip-inner">
-                            <input class="inputF" min="7" max="10" placeholder="Teléfono" type="number" id="iTelefono" required="required" value="tel" style="width: 500px">                                
+                        <div class="container mt-3">
+                            <input class="inputF" min="7" max="10" style="width: 500px;" type="number" id="iTelefono" required="required" value="tel">
+                            <label>Teléfono</label>
+                            <i></i>
                         </div>
                         <div class="msnCont mt-4">
                             <input class="inputF"

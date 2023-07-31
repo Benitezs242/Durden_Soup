@@ -19,17 +19,18 @@
 
 @font-face {
     font-family: 'tituloItalica';
-    src: url(../fonts/TituloItalica.otf);}
+    src: url(../fonts/TituloItalica.otf);
+}
 
 /* Texto */
 
-.conText{
+.conText {
     font-family: 'tituloBold';
     font-size: 50px;
     line-height: 40px;
 }
 
-.letraP{
+.letraP {
     font-family: 'tituloItalica';
     font-size: 30px;
     line-height: 40px
@@ -53,7 +54,7 @@ a {
     font-size: 13px !important;
 }
 
-.contenedorFormulario{
+.contenedorFormulario {
     margin-top: 5rem;
 }
 
@@ -76,9 +77,31 @@ a {
     background-color: #ffffff
 }
 
-.inputF::-webkit-input-placeholder {
-    text-align: center;
+.container {
+    position: relative;
 }
+
+.container label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+    pointer-events: none;
+    transition: .5s;
+    font-size: 14px;
+    font-family: 'sandRegular';
+    transform: translateX(65px);
+}
+
+.container input:valid~label,
+.container input:focus~label {
+    color: #AB8BCB;
+    transform: translateY(60px);
+    transform: translateX(60px);
+    font-size: .6rem;
+}
+
 
 /* css del send button */
 
@@ -99,64 +122,8 @@ a {
     transition: background box-shadow 280ms ease;
 }
 
-
-
 .buttonSend :active {
     box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
     outline: none;
     border: 2px solid #AB8BCB;
 }
-
-
-.tooltip {
-    position: relative;
-    display: inline-block;
-    margin:10rem;
-    border-bottom: 1px dotted black;
-  }
-  
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 300px;
-    min-width: 350px;
-    background-color: #292929;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: .5rem;
-    position: absolute;
-    z-index: 1;
-    bottom: 250%;
-    left: 50%;
-    margin-left: -60px;
-    font-family:sans-serif;
-  }
-  
-  .tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 10%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #292929 transparent transparent transparent;
-  }
-  
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
