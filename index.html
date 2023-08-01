@@ -24,10 +24,10 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary pt-1 pb-1 fixed-top">
         <div class="container-fluid d-flex">
             <ul class="nav nav-pills d-flex sobreNo">
-                <li>
-                    <button class="btn btn-outline-secondary  rounded-circle border-0 offButt" type="button"
-                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
-                        <img src="assets/img/iconos/burger_icon.png" alt="">
+                <li class="offButt">
+                    <button class="rounded-5 border-0" style="background-color: #1B1A1D" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample">
+                        <img src="assets/img/Log/burger_icon.png" alt="">
                     </button>
                 </li>
                 <div class="pildoras d-flex">
@@ -46,9 +46,9 @@
                 </div>
             </ul>
             <div class="nav-item">
-                <a class="navbar-brand d-flex justify-content-center loguito" href="#">
-                    <img src="assets/img/iconos/loguito.png">
-                </a>
+                <div class="navbar loguito" href="#">
+                    <img src="assets/img/Log/Logo-01.png">
+                </div>
             </div>
             <ul class="nav nav-pills d-flex">
                 <li class="nav-item">
@@ -61,19 +61,22 @@
                         </button>
                     </form>
                 </li>
-                <li class="nav-item">
-                    <button class="btn btn-outline-secondary  rounded-circle border-0 user" type="submit">
-                        <img src="assets/img/iconos/user.png" alt="">
+                <li class="nav-item login">
+                    <button class="text-white rounded-5 border-0 user" style="background-color: #1B1A1D" type="submit">
+                        <img src="assets/img/Log/user.png" alt=""> <br>
+                        <div class="iniciarS">Iniciar Sesión</div>
                     </button>
                 </li>
-                <li class="nav-item">
-                    <button class="btn btn-outline-secondary  rounded-circle border-0 user" type="submit">
-                        <img src="assets/img/iconos/heart.png" alt="">
+                <li class="nav-item favorite">
+                    <button class="text-white rounded-5 border-0 heart" style="background-color: #1B1A1D" type="submit">
+                        <img src="assets/img/Log/heart.png" alt=""> <br>
+                        <div class="fav">Favoritos</div>
                     </button>
                 </li>
-                <li class="nav-item">
-                    <button class="btn btn-outline-secondary rounded-circle border-0 user" type="submit">
-                        <img src="assets/img/iconos/cart.png" alt="">
+                <li class="nav-item cart">
+                    <button class="text-white rounded-5 border-0 cart" style="background-color: #1B1A1D" type="submit">
+                        <img src="assets/img/Log/cart.png" alt=""> <br>
+                        <div class="shopp">Carrito</div>
                     </button>
                 </li>
             </ul>
@@ -85,13 +88,15 @@
 
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
-            <h1 class="offcanvas-title" id="offcanvasExampleLabel">Durden Soap</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h1 class="offcanvas-title mb-5 mt-4" id="offcanvasExampleLabel">Durden Soap</h1>
+            <button type="button" class="close-button cerrarOff bg-transparent border-0" data-bs-dismiss="offcanvas">
+                <img src="assets/img/Log/close-button.png" alt="">
+            </button>
         </div>
         <div class="offcanvas-body d-flex flex-column justify-content-start">
             <div>
-                <button class="cta">
-                    <img src="assets/img/iconos/user.png" alt="">&nbsp
+                <button class="cta mb-4">
+                    <img src="assets/img/Log/user (1).png" alt="">&nbsp
                     <span class="hover-underline-animation"> Mi Perfil </span>
                     <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
                         id="arrow-horizontal">
@@ -100,8 +105,8 @@
                             id="Path_10"></path>
                     </svg>
                 </button>
-                <button class="reg">
-                    <img src="assets/img/iconos/account_member.png" alt="">&nbsp
+                <button class="reg mb-4">
+                    <img src="assets/img/Log/account_member.png" alt="">&nbsp
                     <span class="hover-underline-animation"> Registrate </span>
                     <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
                         id="arrow-horizontal">
@@ -110,8 +115,8 @@
                             id="Path_10"></path>
                     </svg>
                 </button>
-                <button class="wish">
-                    <img src="assets/img/iconos/order_list.png" alt="">&nbsp
+                <button class="wish mb-4">
+                    <img src="assets/img/Log/order_list.png" alt="">&nbsp
                     <span class="hover-underline-animation"> ¡Lo quiero! </span>
                     <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
                         id="arrow-horizontal">
@@ -120,16 +125,18 @@
                             id="Path_10"></path>
                     </svg>
                 </button>
-                <button class="cont">
-                    <img src="assets/img/iconos/customer-service.png" alt="">&nbsp
-                    <span class="hover-underline-animation"> Contactanos </span>
-                    <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
-                        id="arrow-horizontal">
-                        <path transform="translate(30)"
-                            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10"
-                            id="Path_10"></path>
-                    </svg>
-                </button>
+                <a href="contacto.html">
+                    <button class="cont mb-4">
+                        <img src="assets/img/Log/customer-service.png" alt="">&nbsp
+                        <span class="hover-underline-animation"> Contactanos </span>
+                        <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
+                            id="arrow-horizontal">
+                            <path transform="translate(30)"
+                                d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                                data-name="Path 10" id="Path_10"></path>
+                        </svg>
+                    </button>
+                </a>
             </div>
         </div>
     </div>

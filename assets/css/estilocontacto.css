@@ -116,8 +116,6 @@ a {
     font-size: 13px;
     font-weight: 500;
     font-family: 'sandRegular';
-    letter-spacing: .25px;
-    line-height: normal;
     padding: 11px 24px;
     transition: background box-shadow 280ms ease;
 }
