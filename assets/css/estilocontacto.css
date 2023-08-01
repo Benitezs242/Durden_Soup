@@ -77,9 +77,31 @@ a {
     background-color: #ffffff
 }
 
-.inputF::-webkit-input-placeholder {
-    text-align: center;
+.container {
+    position: relative;
 }
+
+.container label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+    pointer-events: none;
+    transition: .5s;
+    font-size: 14px;
+    font-family: 'sandRegular';
+    transform: translateX(65px);
+}
+
+.container input:valid~label,
+.container input:focus~label {
+    color: #AB8BCB;
+    transform: translateY(60px);
+    transform: translateX(60px);
+    font-size: .6rem;
+}
+
 
 /* css del send button */
 
@@ -100,12 +122,11 @@ a {
     transition: background box-shadow 280ms ease;
 }
 
-
-
 .buttonSend :active {
     box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
     outline: none;
     border: 2px solid #AB8BCB;
+<<<<<<< HEAD
 }
 
 
@@ -146,4 +167,6 @@ a {
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+=======
+>>>>>>> julieth
 }
