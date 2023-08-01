@@ -67,6 +67,11 @@ body {
     font-size: 13px;
 }
 
+.offcanvas-header{
+    font-family: 'tituloBold';
+}
+
+
 .sobreNo a {
     text-decoration: none;
     color: rgb(255, 255, 255) !important;
@@ -138,6 +143,7 @@ body {
 .cerrarOff img {
     width: 25px;
     height: 25px;
+    margin-bottom: 100px !important;
 }
 
 /* css buttons offcanvas */

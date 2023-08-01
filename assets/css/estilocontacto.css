@@ -3,6 +3,11 @@
     src: url(../fonts/Quicksand-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'sandSemibold';
+    src: url(../fonts/Quicksand-SemiBold.ttf);
+}
+
 @layer base {
 
     input[type="number"]::-webkit-inner-spin-button,
@@ -20,6 +25,374 @@
 @font-face {
     font-family: 'tituloItalica';
     src: url(../fonts/TituloItalica.otf);
+}
+
+.loguito img {
+    width: 90px;
+    height: 60px;
+}
+
+.user img {
+    width: 20px;
+    height: 20px;
+}
+
+
+.cart img {
+    width: 20px;
+    height: 20px;
+}
+
+.shopp {
+    margin-top: 0px;
+}
+
+.heart img {
+    width: 20px;
+    height: 20px;
+}
+
+.iniciarS {
+    font-size: 13px;
+}
+
+.fav {
+    font-size: 13px;
+}
+
+.shopp {
+    font-size: 13px;
+}
+
+.sobreNo a {
+    text-decoration: none;
+    color: rgb(255, 255, 255) !important;
+    font-size: 14px !important;
+    font-family: 'sandSemiBold' !important;
+}
+
+.pildoras a {
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-decoration: none;
+}
+
+.pildoras a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.pildoras a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.offButt img {
+    width: 25px;
+    height: 25px;
+}
+
+.offButt:hover button {
+    border: 1px solid #ffffff !important;
+    border-radius: none !important;
+    padding: 0.8em 1.2em 0.8em 1em !important;
+    transition: all ease-in-out 0.2s !important;
+}
+
+.login:hover button {
+    border: 1px solid #ffffff !important;
+    border-radius: none !important;
+    padding-left: 0.7em !important;
+    padding-right: 0.7em !important;
+    transition: all ease-in-out 0.3s !important;
+}
+
+.favorite:hover button {
+    border: 1px solid #ffffff !important;
+    border-radius: none !important;
+    padding-left: 0.7em !important;
+    padding-right: 0.7em !important;
+    transition: all ease-in-out 0.3s !important;
+}
+
+.cart:hover button {
+    border: 1px solid #ffffff !important;
+    border-radius: none !important;
+    padding-left: 0.7em !important;
+    padding-right: 0.7em !important;
+    transition: all ease-in-out 0.3s !important;
+}
+
+.cerrarOff img {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 100px !important;
+}
+
+/* css buttons offcanvas */
+
+.offcanvas-header{
+    font-family: 'tituloBold';
+}
+
+.input {
+    width: 150px;
+    padding: 10px 0px 10px 40px;
+    border-radius: 9999px;
+    border: solid 1px #ffffff;
+    transition: all .2s ease-in-out;
+    outline: none;
+    opacity: 0.8;
+    
+}
+
+.container-input svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+}
+
+.input:focus {
+    opacity: 1;
+    width: 250px;
+}
+
+.container-input {
+    position: relative;
+}
+
+.cta img {
+    width: 25px;
+    height: 25px;
+}
+
+.cta {
+    border: none;
+    background: none;
+}
+
+.cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 15px;
+    padding-right: 15px;
+    text-transform: capitalize;
+    font-family: 'sandSemiBold'
+}
+
+.cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active svg {
+    transform: scale(0.9);
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.reg img {
+    width: 25px;
+    height: 25px;
+}
+
+.reg {
+    border: none;
+    background: none;
+}
+
+.reg span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 15px;
+    padding-right: 15px;
+    text-transform: capitalize;
+    font-family: 'sandSemiBold'
+}
+
+.reg svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+}
+
+.reg:hover svg {
+    transform: translateX(0);
+}
+
+.reg:active svg {
+    transform: scale(0.9);
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.reg:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.wish img {
+    width: 25px;
+    height: 25px;
+}
+
+.wish {
+    border: none;
+    background: none;
+}
+
+.wish span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 15px;
+    padding-right: 15px;
+    text-transform: capitalize;
+    font-family: 'sandSemiBold'
+}
+
+.wish svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+}
+
+.wish:hover svg {
+    transform: translateX(0);
+}
+
+.wish:active svg {
+    transform: scale(0.9);
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.wish:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.cont img {
+    width: 25px;
+    height: 25px;
+}
+
+.cont {
+    border: none;
+    background: none;
+}
+
+.cont span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 15px;
+    padding-right: 15px;
+    text-transform: capitalize;
+    font-family: 'sandSemiBold'
+}
+
+.cont svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+}
+
+.cont:hover svg {
+    transform: translateX(0);
+}
+
+.cont:active svg {
+    transform: scale(0.9);
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.cont:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 /* Texto */
@@ -108,6 +481,7 @@ a {
 .buttonSend {
     background-color: #ab8bcb21;
     border-radius: 24px;
+    border: 1px solid #AB8BCB;
     outline: #AB8BCB solid 1px;
     border-style: none;
     box-shadow: rgba(222, 180, 247, 0.2) 0 4px 6px -2px, rgba(236, 186, 248, 0.14) 0 7px 11px 0, rgba(159, 120, 182, 0.12) 0 2px 19px 0;
@@ -124,4 +498,40 @@ a {
     box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
     outline: none;
     border: 2px solid #AB8BCB;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .footContacto {
+        background-color: green;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .footContacto {
+        background-color: blue;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .footContacto {
+        background-color: yellow;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .footContacto {
+        background-color: orange;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .footContacto {
+        background-color: pink;
+    }
 }
