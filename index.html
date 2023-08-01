@@ -20,8 +20,10 @@
     <!-- fonfamily
         @import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
 -->
+
     <!-- nav bar con canvas y producto -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary pt-1 pb-1 fixed-top">
+    <nav class="navbar d-flex justify-content-around" style="background-color: #1B1A1D; padding: 0%;">
+        <!-- Navbar content -->
         <div class="container-fluid d-flex">
             <ul class="nav nav-pills d-flex sobreNo">
                 <li class="offButt">
@@ -30,18 +32,15 @@
                         <img src="assets/img/Log/burger_icon.png" alt="">
                     </button>
                 </li>
-                <div class="pildoras d-flex">
-                    <li class="nav-item">
-                        <a class="nav-link p-2" href="">Sobre Nosotros</a>
+                <div class="pildoras d-flex align-items-center">
+                    <li>
+                        <a class="nav-link p-0 m-0 mx-2" href="#">Sobre Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link p-2" href="#nosotros">Aprende con Nosotros</a>
+                        <a class="nav-link p-0 m-0 mx-2" href="#">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link p-2" href="#productosSeccion">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link p-2" href="#DourdenBaby">Durden Baby</a>
+                        <a class="nav-link p-0 m-0 mx-2" href="#">Guías</a>
                     </li>
                 </div>
             </ul>
@@ -50,16 +49,17 @@
                     <img src="assets/img/Log/Logo-01.png">
                 </div>
             </div>
-            <ul class="nav nav-pills d-flex">
-                <li class="nav-item">
-                    <form class="d-flex input-group-sm mx-2" role="search">
-                        <input class="form-control mt-1 rounded-0 rounded-start border" type="text"
-                            placeholder="Busca en Durden">
-                        <button class="btn btn-outline-secondary rounded-0 rounded-end mt-1 border lupita"
-                            type="submit">
-                            <img src="assets/img/iconos/lupa.png" alt="">
-                        </button>
-                    </form>
+            <ul class="nav nav-pills d-flex ">
+                <li class="nav-item align-items-center">
+                    <div class="container-input mx-2">
+                        <input type="text" placeholder="Buscar" name="text" class="input" >
+                        <svg fill="#FFFFFF" width="20px" height="20px" viewBox="0 0 1920 1920"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z"
+                                fill-rule="evenodd"></path>
+                        </svg>
+                    </div>
                 </li>
                 <li class="nav-item login">
                     <button class="text-white rounded-5 border-0 user" style="background-color: #1B1A1D" type="submit">
