@@ -451,6 +451,32 @@ a {
     background-color: #ffffff
 }
 
+.container {
+    position: relative;
+}
+
+.container label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+    pointer-events: none;
+    transition: .5s;
+    font-size: 14px;
+    font-family: 'sandRegular';
+    transform: translateX(65px);
+}
+
+.container input:valid~label,
+.container input:focus~label {
+    color: #AB8BCB;
+    transform: translateY(60px);
+    transform: translateX(60px);
+    font-size: .6rem;
+}
+
+
 .inputF::-webkit-input-placeholder {
     text-align: center;
 }
