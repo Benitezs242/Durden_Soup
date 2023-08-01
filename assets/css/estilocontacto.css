@@ -116,8 +116,6 @@ a {
     font-size: 13px;
     font-weight: 500;
     font-family: 'sandRegular';
-    letter-spacing: .25px;
-    line-height: normal;
     padding: 11px 24px;
     transition: background box-shadow 280ms ease;
 }
@@ -126,47 +124,4 @@ a {
     box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
     outline: none;
     border: 2px solid #AB8BCB;
-<<<<<<< HEAD
-}
-
-
-.tooltip {
-    position: relative;
-    display: inline-block;
-    margin: 10rem;
-    border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 300px;
-    min-width: 350px;
-    background-color: #292929;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: .5rem;
-    position: absolute;
-    z-index: 1;
-    bottom: 250%;
-    left: 50%;
-    margin-left: -60px;
-    font-family: sans-serif;
-}
-
-.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 10%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #292929 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-=======
->>>>>>> julieth
 }
