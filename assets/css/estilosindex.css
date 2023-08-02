@@ -16,7 +16,7 @@
   src: url(../fonts/Quicksand-SemiBold.ttf);
 }
 * {
-  background-color: transparent;
+  /* background-color: transparent; */
 }
 body {
   font-family: var(--tipoletra1);
@@ -383,7 +383,7 @@ aplicado en Titulo de productos */
 
 /*Inicio de css para contenedor de grilla*/
 .fondotarjeta {
-  background-image: url(../img/Fondos/Marco.jpg);
+  background-color:#000000 !important; 
   width: 18rem;
 }
 
@@ -394,65 +394,8 @@ aplicado en Titulo de productos */
 /* Css https://plantillashtmlgratis.com/categoria/efectos-css/botones-css-efecto-hover creado por Andreas Storm / */
 .texto {
   text-decoration: none;
-  color: inherit;
+  color: black;
   font-size: 30px;
-}
-
-.cta {
-  position: relative;
-  margin: auto;
-  padding: 19px 22px;
-  transition: all 0.2s ease;
-}
-
-.cta:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  border-radius: 28px;
-  background: rgba(255, 171, 157, 0.5);
-  width: 56px;
-  height: 56px;
-  transition: all 0.3s ease;
-}
-
-.cta span {
-  position: relative;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 900;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  vertical-align: middle;
-  color: #000000;
-}
-
-.cta svg {
-  position: relative;
-  top: 0;
-  margin-left: 10px;
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke: #111;
-  stroke-width: 2;
-  transform: translateX(-5px);
-  transition: all 0.3s ease;
-}
-
-.cta:hover:before {
-  width: 100%;
-  background: #ffab9d;
-}
-
-.cta:hover svg {
-  transform: translateX(0);
-}
-
-.cta:active {
-  transform: scale(0.96);
 }
 
 /* Fin css para grillas principales*/
@@ -468,4 +411,24 @@ aplicado en Titulo de productos */
 }
 .imgtarjetas{
   height: 80px;
+}   
+.contenedor {
+  position: relative;
+  height: 290px;
+  width: 290px;
+  margin: 50px 20px;
+  float: left;
+}
+
+.cambioimg img {
+  position: absolute;
+  left: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.cambioimg img.arriba:hover {
+  opacity: 0;
+}
+.cuerpocarta{
+  margin-top: 260;
 }
