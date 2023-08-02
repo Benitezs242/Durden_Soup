@@ -1,0 +1,305 @@
+@font-face {
+    font-family: 'sandRegular';
+    src: url(../fonts/Quicksand-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'sandBold';
+    src: url(../fonts/Quicksand-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'sandSemibold';
+    src: url(../fonts/Quicksand-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'tituloBold';
+    src: url(../fonts/TituloBold.otf);
+}
+
+@font-face {
+    font-family: 'tituloItalica';
+    src: url(../fonts/TituloItalica.otf);
+}
+
+
+body {
+    font-family: 'sandRegular';
+}
+
+:root {
+    --durdenLavanda-color: #ab8bcb;
+    --durdenBlack-color: #1b1a1d;
+    --durdenGray-color: #f2f2f2;
+}
+
+/* Nav : Barra busqueda e iconos */
+
+.loguito img {
+    width: 90px;
+    height: 60px;
+}
+
+.user img {
+    width: 20px;
+    height: 20px;
+}
+
+
+.cart img {
+    width: 20px;
+    height: 20px;
+}
+
+.shopp {
+    margin-top: 0px;
+}
+
+.heart img {
+    width: 20px;
+    height: 20px;
+}
+
+.iniciarS {
+    font-size: 13px;
+}
+
+.fav {
+    font-size: 13px;
+}
+
+.shopp {
+    font-size: 13px;
+}
+
+.sobreNo a {
+    text-decoration: none;
+    color: rgb(255, 255, 255) !important;
+    font-size: 14px !important;
+    font-family: 'sandSemiBold' !important;
+}
+
+.pildoras a {
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-decoration: none;
+}
+
+.pildoras a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.pildoras a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.offButt img {
+    width: 25px;
+    height: 25px;
+}
+
+.offButt:hover button{
+    border: 1px solid #ffffff !important;
+    border-radius: none !important;
+    padding: 0.8em 1.2em 0.8em 1em !important;
+    transition: all ease-in-out 0.2s !important;
+}
+
+.login:hover button{
+    border: 1px solid #ffffff !important;
+    border-radius: none !important;
+    padding-left: 0.7em !important;
+    padding-right: 0.7em !important;
+    transition: all ease-in-out 0.3s !important;
+}
+
+.favorite:hover button{
+    border: 1px solid #ffffff !important;
+    border-radius: none !important;
+    padding-left: 0.7em !important;
+    padding-right: 0.7em !important;
+    transition: all ease-in-out 0.3s !important;
+}
+
+.cart:hover button{
+    border: 1px solid #ffffff !important;
+    border-radius: none !important;
+    padding-left: 0.7em !important;
+    padding-right: 0.7em !important;
+    transition: all ease-in-out 0.3s !important;
+}
+
+.cerrarOff img {
+    width: 25px;
+    height: 25px;
+}
+
+/* find de navbar */
+
+/* Producto Secundario body */
+
+/* Texto izquierda */
+
+.tituloCosmeticos {
+    padding-bottom: 50px;
+}
+
+.textoIzquierda {
+    height: 588.281px;
+}
+
+.sectionEsenciales {
+    margin-top: 150px;
+}
+
+.cosmeticosLetra {
+    font-family: 'tituloItalica';
+    font-size: 70px;
+    padding-bottom: 15px;
+}
+
+.esencialesLetra {
+    font-family: 'TituloBold';
+    font-size: 85px;
+    line-height: 5px;
+    padding-bottom: 20px;
+}
+
+.lineaMorada {
+    margin-top: 40px;
+    border-bottom: 5px solid var(--durdenLavanda-color);
+    width: 100px;
+}
+
+.parrafoCosmeticos {
+    font-family: 'sandSemibold';
+    width: 400px;
+    padding-bottom: 160px;
+}
+
+.botonComprar {
+    background-color: var(--durdenLavanda-color);
+    color: var(--durdenGray-color);
+}
+
+.botonComprar:hover {
+    background-color: var(--durdenLavanda-color);
+    color: var(--durdenGray-color);
+    border: solid 2px  var(--durdenBlack-color);
+}
+
+/* Texto izquierda END */
+
+/*imagenes derecha */
+
+.imagenCosmeticos {
+    width: 750px;
+    padding-top: 28px;
+}
+
+.tresImagenes img {
+    width: 200px;
+    height: 200px;
+}
+
+/* Producto Secundario body END */
+
+.instruccionesLetra {
+    font-family: 'tituloItalica';
+    font-size: 70px;
+    
+}
+
+.parrafoInstrucciones {
+    font-family: 'sandSemibold';
+    width: 700px;
+    padding-bottom: 50px;
+}
+
+.videito {
+    background-color: var(--durdenLavanda-color);
+    width: 100% !important;
+}
+
+/*Ingredientes*/
+
+.sectionIngredientes {
+    margin-top: 90px;
+}
+
+.tituloCosmeticos2 {
+    padding-bottom: 50px;
+}
+
+.parrafoIngrediente {
+    font-family: 'sandSemibold';
+    width: 400px;
+    padding-bottom: 70px;
+}
+
+.iconosDiv img {
+    width: 100px;
+    margin-right: 40px;
+}
+
+.iconosDiv {
+    padding-bottom: 100px;
+}
+
+.iconosDiv span {
+    font-family: 'sandSemibold';
+}
+
+.imagenIngredientes {
+    width: 450px;
+    display: flex;
+    justify-content: end;
+}
+
+.textoIzquierda2 {
+    height: 588.281px;
+    width: 1000px;
+}
+
+.tylerImagenes img {
+    margin-top: 20px;
+    width: 400px;
+}
+
+.tylerImagenes {
+    margin-bottom: 100px;
+}
+
+/* footer */ 
+
+.logoTel img {
+    width: 25px;
+    height: 25px;
+}
+
+.logoUbi img {
+    width: 25px;
+    height: 25px;
+}
+
+a {
+    text-decoration: none !important;
+    color: rgb(255, 255, 255) !important;
+    font-size: 13px !important;
+}
+
+.contenedorFormulario {
+    margin-top: 5rem;
+}
