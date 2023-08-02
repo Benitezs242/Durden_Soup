@@ -130,3 +130,8 @@ body{
 .headerFont {
     font-family: 'sandBold';
 }
+
+.loguito img {
+    width: 90px;
+    height: 60px;
+}

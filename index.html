@@ -20,7 +20,7 @@
 
 <body>
     <!-- nav bar con canvas y producto -->
-    <nav class="navbar d-flex justify-content-around" style="background-color: #1B1A1D; padding: 0%;">
+    <nav class="navbar d-flex justify-content-around fixed-top" style="background-color: #1B1A1D; padding: 0%;">
         <!-- Navbar content -->
         <div class="container-fluid d-flex">
             <ul class="nav nav-pills d-flex sobreNo">
@@ -32,19 +32,19 @@
                 </li>
                 <div class="pildoras d-flex align-items-center">
                     <li>
-                        <a class="nav-link p-0 m-0 mx-2" href="#">Sobre Nosotros</a>
+                        <a class="nav-link p-0 m-0 mx-2" href="#nosotros">Sobre Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link p-0 m-0 mx-2" href="#">Productos</a>
+                        <a class="nav-link p-0 m-0 mx-2" href="#productos">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link p-0 m-0 mx-2" href="#">Guías</a>
+                        <a class="nav-link p-0 m-0 mx-2" href="#diego">Guías</a>
                     </li>
                 </div>
             </ul>
             <div class="nav-item">
                 <div class="navbar loguito" href="#">
-                    <img src="assets/img/Log/Logo-01.png">
+                <img src="assets/img/Log/Logo-01.png">
                 </div>
             </div>
             <ul class="nav nav-pills d-flex ">
@@ -60,9 +60,9 @@
                     </div>
                 </li>
                 <li class="nav-item login">
-                    <button class="text-white rounded-5 border-0 user" style="background-color: #1B1A1D" type="submit">
+                    <a href="html/login.html"><button class="text-white rounded-5 border-0 user" style="background-color: #1B1A1D" type="submit">
                         <img src="assets/img/Log/user.png" alt=""> <br>
-                        <div class="iniciarS"><a href="html/login.html">Iniciar Sesión </a></div>
+                        <div class="iniciarS">Iniciar Sesión</div> </a>
                     </button>
                 </li>
                 <li class="nav-item favorite">
@@ -81,9 +81,6 @@
         </div>
     </nav>
     <!-- fin nav bar  y comienzo de off canvas-->
-
-
-
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
             <h1 class="offcanvas-title mb-5 mt-4" id="offcanvasExampleLabel">Durden Soap</h1>
@@ -175,7 +172,7 @@
     </div>
     <Section class="fondonosotros">
         <div class="row">
-            <div class="col-4 offset-3 ">
+            <div class="col-4 offset-3 " id="nosotros">
                 <section class="d-flex justify-content-between container mt-4">
                     <div class="w-100 d-flex justify-content-center align-items-center">
                         <div class="linea"> </div>
@@ -203,7 +200,7 @@
     </section>
 
     <!-- Grilla de productos -->
-    <section id="productosSeccion" class="container-fluid">
+    <section id="productos" class="container-fluid">
         <div>
             <div class="d-flex justify-content-center shadow-sm p-1 rounded">
                 <a href="#" class="dProducto">Durden Productos</a>
