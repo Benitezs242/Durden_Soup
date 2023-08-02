@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'TituloBold';
+    src: url();
+}
+
+body{
+    font-family: 'Lumanosimo', cursive;
+    overflow-x: hidden;
+}
+
+.fondonosotros{
+    background-color: rgb(223, 223, 223);
+    font-weight: 100%;
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+
+.slick-dots li button:before {
+    font-size: 16px !important;
+    color: #a00085 !important;
+   }
+
+.slick-dots li.slick-active button:before {
+    color: #ff009d !important;
+    font-size: 15px;
+
+}
+
+.linea {
+    border-bottom: 4px solid #e493d6;
+    width: 130px;   
+    margin-left: 30px;
+}
+
+.des{
+    font-size: 70px;
+}
+
+.bca{
+    position: absolute;
+    left: 7%;
+    bottom: 161px;
+    background-color: #925989;
+    border: none;
+}
+.bca:hover {
+    background-color: #a00085;
+}
+
+.pepeespacio{
+    white-space: nowrap;
+}
+
+.opcion:hover{
+    background-color: #00d1ff;
+    font-weight: bold;
+}
+
+.bc {
+    
+    position: absolute;
+    right: 27%;
+    bottom: -350px;
+    background-color: #925989;
+    border: none;
+}
+
+.bc:hover{
+    background-color: #ffa7f0
+}
+
+.fondoinicio { 
+    background-color: transparent;
+    border-radius: 5%;
+    
+        
+}
+

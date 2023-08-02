@@ -15,9 +15,6 @@
   font-family: 'sandSemibold';
   src: url(../fonts/Quicksand-SemiBold.ttf);
 }
-* {
-  /* background-color: transparent; */
-}
 body {
   font-family: var(--tipoletra1);
   overflow-x: hidden;
