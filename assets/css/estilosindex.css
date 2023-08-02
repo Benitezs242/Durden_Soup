@@ -16,9 +16,8 @@
   src: url(../fonts/Quicksand-SemiBold.ttf);
 }
 body {
-  font-family: var(--tipoletra1);
+  font-family: 'sandRegular' !important;
   overflow-x: hidden;
-  /* font-family: 'Lumanosimo', cursive; */
 }
 /* css para navbar */
 .lupita img {
@@ -285,6 +284,10 @@ body {
   transform-origin: bottom left;
 }
 
+.txtFoot{
+  font-size: 14px !important;
+}
+
 .iconRedes img {
   width: 20px;
   height: 20px
@@ -375,6 +378,16 @@ body {
   transition: all 0.3s ease-out;
   transform: scale(1, 1) rotate(0deg);
 }
+
+.bca{
+  background-color: #ab8bcb !important;
+  font-family: 'sandSemiBold';
+  font-size: 14px !important;
+  padding: 10px 8px;
+  border-radius: 5px;
+  border:none;
+}
+
 /* Estilo obtenido de https://ovdivi.com/10-botones-creativos-con-increibles-efectos-hover-para-tus-sitios-web-creados-con-divi/
 aplicado en Titulo de productos */
 
@@ -389,10 +402,53 @@ aplicado en Titulo de productos */
 }
 /* Css Boton Saber mas/
 /* Css https://plantillashtmlgratis.com/categoria/efectos-css/botones-css-efecto-hover creado por Andreas Storm / */
+
+.linea{
+  background-color: #ab8bcb !important;
+  border-color: #ab8bcb !important;
+}
+
+.fondonosotros{
+  background-color: white !important;
+}
+
+.dProducto{font-family: 'tituloItalica';
+color: #111 !important;
+font-size: 40px !important;}
+
+.pepeespacio1{
+  font-family: 'tituloItalica';
+  font-size: 40px !important;
+}
+
+.pepeespacio{
+  font-family: 'tituloBold';
+}
+
+.jab{
+  font-size: 15px;
+  color: #000000;
+}
+
 .texto {
   text-decoration: none;
   color: black;
   font-size: 30px;
+}
+
+.btnAprende button{
+  background-color: #ab8bcb;
+  color: #000000;
+  font-family: 'sandSemiBold';
+  font-size: 15px !important;
+  padding: 10px 8px;
+  border-radius: 5px;
+  border:none;
+}
+
+.btnAprende{
+  margin: 4px 6px;
+  color: #000000 !important;
 }
 
 /* Fin css para grillas principales*/
