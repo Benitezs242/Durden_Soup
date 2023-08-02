@@ -1,7 +1,28 @@
 @font-face {
-    font-family: 'TituloBold';
-    src: url();
+    font-family: 'sandRegular';
+    src: url(../fonts/Quicksand-Regular.ttf);
 }
+
+@font-face {
+    font-family: 'sandBold';
+    src: url(../fonts/Quicksand-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'sandSemibold';
+    src: url(../fonts/Quicksand-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'tituloBold';
+    src: url(../fonts/TituloBold.otf);
+}
+
+@font-face {
+    font-family: 'tituloItalica';
+    src: url(../fonts/TituloItalica.otf);
+}
+
 
 body{
     font-family: 'Lumanosimo', cursive;
@@ -76,3 +97,36 @@ body{
         
 }
 
+.titulo {
+    font-family: 'tituloBold';
+}
+
+.inicioSesionfont {
+    font-family: 'sandRegular';
+}
+
+.opcion {
+    font-family: 'sandRegular';
+}
+
+.Otexto {
+    font-family: 'sandBold';
+    color: #ffffff;    
+}
+
+.cuentaFont {
+    font-family: 'sandBold';
+}
+
+.registrateFont {
+    font-family: 'sandBold';
+    color: #ffffff;    
+}
+
+.placeholderFont input {
+    font-family: 'sandRegular';   
+}
+
+.headerFont {
+    font-family: 'sandBold';
+}
