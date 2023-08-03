@@ -438,7 +438,7 @@ font-size: 40px !important;}
 
 .btnAprende button{
   background-color: #ab8bcb;
-  color: #000000;
+  color: #fff;
   font-family: 'sandSemiBold';
   font-size: 15px !important;
   padding: 10px 8px;
@@ -448,7 +448,7 @@ font-size: 40px !important;}
 
 .btnAprende{
   margin: 4px 6px;
-  color: #000000 !important;
+  color: #fff !important;
 }
 
 /* Fin css para grillas principales*/
